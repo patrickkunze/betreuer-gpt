@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Betreuungsauftrag",
+  "type": "object",
+  "properties": {
+    "mandateId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Betreuungsauftrags"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "appointmentDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der gerichtlichen Bestellung (Bestellungsdatum)"
+    },
+    "court": {
+      "type": "string",
+      "description": "Name des Gerichts oder der urteilenden Stelle"
+    },
+    "scope": {
+      "type": "string",
+      "description": "Umfang der Bestellung, z. B. Gesundheitsfürsorge, Vermögenssorge"
+    },
+    "limitations": {
+      "type": "string",
+      "description": "Etwaige Befristungen oder Einschränkungen des Auftrags",
+      "default": ""
+    },
+    "conditions": {
+      "type":

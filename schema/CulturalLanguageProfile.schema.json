@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CulturalLanguageProfile",
+  "type": "object",
+  "properties": {
+    "profileId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des kulturell-sprachlichen Profils"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person, auf die sich das Profil bezieht"
+    },
+    "nativeLanguage": {
+      "type": "string",
+      "description": "Muttersprache der betreuten Person"
+    },
+    "interpreterNeeded": {
+      "type": "boolean",
+      "description": "Gibt an, ob ein Dolmetscher benötigt wird"
+    },
+    "preferredLanguages": {
+      "type": "array",
+      "description": "Bevorzugte Sprachen für die Kommunikation",
+      "items": {
+        "type": "string"
+      }
+    },
+    "culturalConsiderations": {
+      "type": "string",
+      "description": "Kulturelle Besonderheiten oder relevante Hinweise"
+    }
+  },
+  "required": ["profileId", "clientId", "nativeLanguage", "interpreterNeeded"]
+}

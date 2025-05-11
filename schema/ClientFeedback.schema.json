@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClientFeedback",
+  "type": "object",
+  "properties": {
+    "feedbackId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Feedback-Eintrags"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Rückmeldung im Format YYYY-MM-DD"
+    },
+    "satisfactionLevel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Zufriedenheitsskala von 1 (sehr unzufrieden) bis 5 (sehr zufrieden)"
+    },
+    "comments": {
+      "type": "string",
+      "description": "Freitextfeld für offene Anmerkungen",
+      "maxLength": 2000
+    },
+    "changeRequests": {
+      "type": "string",
+      "description": "Wünsche oder Vorschläge der betreuten Person zur Änderung oder Verbesserung der Betreuung",
+      "maxLength": 2000
+    }
+  },
+  "required": ["feedbackId", "clientId", "date", "satisfactionLevel"]
+}

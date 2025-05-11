@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Notfallplan",
+  "type": "object",
+  "properties": {
+    "planId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Notfallplans"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "emergencyContacts": {
+      "type": "array",
+      "description": "Liste von Kontaktpersonen für den Notfall",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name der Kontaktperson"
+          },
+          "relationship": {
+            "type": "string",
+            "description": "Beziehung zur betreuten Person"
+          },
+          "phone": {
+            "type": "string",
+            "pattern": "^\\+?[0-9\\-\\s]+$",
+            "description": "Telefonnummer"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "E-Mail-Adresse (optional)"
+          }
+        },
+        "required": ["name", "relationship", "phone"]
+      }
+    },
+    "emergencyNumbers": {
+      "type": "array",
+      "description": "Liste wichtiger Notfallnummern",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Bezeichnung, z.B. 'Notruf Polizei'"
+          },
+          "number": {
+            "type": "string",
+            "pattern": "^\\+?[0-9\\-\\s]+$",
+            "description": "Telefonnummer"
+          }
+        },
+        "required": ["label", "number"]
+      }
+    },
+    "medicalDetails": {
+      "type": "string",
+      "description": "Medizinische Besonderheiten, Allergien, Diagnosen usw."
+    },
+    "actionPlan": {
+      "type": "array",
+      "description": "Schritte, die im Notfall zu unternehmen sind",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stepNumber": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Reihenfolge des Schritts"
+          },
+          "description": {
+            "type": "string",
+            "description": "Beschreibung der Maßnahme"
+          },
+          "responsible": {
+            "type": "string",
+            "description": "Verantwortliche Person oder Rolle"
+          }
+        },
+        "required": ["stepNumber", "description", "responsible"]
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der letzten Aktualisierung"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext-Feld für zusätzliche Hinweise"
+    }
+  },
+  "required": ["planId", "clientId", "emergencyContacts", "emergencyNumbers", "actionPlan"]
+}

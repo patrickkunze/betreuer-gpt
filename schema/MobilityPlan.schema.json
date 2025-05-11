@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Betreuungsaufgabe",
+  "type": "object",
+  "properties": {
+    "taskId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der Aufgabe"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Aufgabe im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "taskType": {
+      "type": "string",
+      "enum": [
+        "Beratung",
+        "Dokumentation",
+        "Terminkoordination",
+        "Mobilitäts- und Transportplanung"
+      ],
+      "description": "Art der Aufgabe"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detaillierte Beschreibung der Aufgabe"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["offen", "inBearbeitung", "abgeschlossen"],
+      "description": "Bearbeitungsstatus der Aufgabe"
+    },
+    "legalReference": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Rechtsgrundlagen bzw. Paragraphen"
+    },
+    "timeSpent": {
+      "type": "object",
+      "properties": {
+        "hours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "minutes": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 59
+        }
+      },
+      "required": [],
+      "description": "Zeitaufwand für die Aufgabe"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext-Feld für Anmerkungen"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      },
+      "description": "Dateianhänge zur Aufgabe"
+    }
+  },
+  "required": ["taskId", "date", "clientId", "taskType", "description", "status"]
+}

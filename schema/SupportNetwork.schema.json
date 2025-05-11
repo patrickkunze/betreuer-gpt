@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SupportNetwork",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "entries": {
+      "type": "array",
+      "description": "Liste der unterstützenden Personen oder Institutionen",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name der unterstützenden Person oder Institution"
+          },
+          "role": {
+            "type": "string",
+            "description": "Rolle im Leben der betreuten Person",
+            "enum": ["Familie", "Freund", "Nachbar", "Betreuer", "Institution", "Pflegedienst", "Arzt", "Sonstige"]
+          },
+          "contactFrequency": {
+            "type": "string",
+            "description": "Häufigkeit des Kontakts",
+            "enum": ["täglich", "wöchentlich", "monatlich", "selten", "unregelmäßig"]
+          },
+          "supportFunction": {
+            "type": "string",
+            "description": "Art der Unterstützung",
+            "enum": ["emotional", "praktisch", "finanziell", "medizinisch", "organisatorisch", "rechtlich", "sonstige"]
+          },
+          "notes": {
+            "type": "string",
+            "description": "Zusätzliche Anmerkungen",
+            "maxLength": 1000
+          }
+        },
+        "required": ["name", "role", "contactFrequency", "supportFunction"]
+      }
+    }
+  },
+  "required": ["clientId", "entries"]
+}

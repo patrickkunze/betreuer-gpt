@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GrievanceRecord",
+  "type": "object",
+  "properties": {
+    "recordId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Beschwerde- oder Konfliktfalls"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Dokumentation im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "occasion": {
+      "type": "string",
+      "description": "Anlass der Beschwerde oder des Konflikts"
+    },
+    "involvedParties": {
+      "type": "array",
+      "description": "Liste der beteiligten Personen oder Institutionen",
+      "items": {
+        "type": "string"
+      }
+    },
+    "procedure": {
+      "type": "string",
+      "description": "Vorgehensweise zur Bearbeitung der Beschwerde/des Konflikts"
+    },
+    "resolutionSteps": {
+      "type": "string",
+      "description": "Geplante oder durchgeführte Lösungsschritte"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["offen", "inBearbeitung", "gelöst", "nicht lösbar"],
+      "description": "Bearbeitungsstatus des Falls"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext-Feld für ergänzende Anmerkungen",
+      "nullable": true
+    },
+    "attachments": {
+      "type": "array",
+      "description": "Liste von zugehörigen Dokumenten oder Dateien",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string",
+            "description": "Name der Datei"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL zur Datei"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      }
+    }
+  },
+  "required": ["recordId", "date", "clientId", "occasion", "involvedParties", "procedure", "resolutionSteps", "status"]
+}

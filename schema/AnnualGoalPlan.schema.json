@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AnnualGoalPlan",
+  "type": "object",
+  "properties": {
+    "planId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Jahresplans"
+    },
+    "year": {
+      "type": "integer",
+      "description": "Jahr, für das der Plan gilt",
+      "minimum": 2000
+    },
+    "goals": {
+      "type": "array",
+      "description": "Liste der Jahresziele",
+      "items": {
+        "type": "object",
+        "properties": {
+          "goalId": {
+            "type": "string",
+            "description": "Eindeutige Kennung des Ziels"
+          },
+          "description": {
+            "type": "string",
+            "description": "Beschreibung des Jahresziels"
+          },
+          "responsiblePerson": {
+            "type": "string",
+            "description": "Verantwortliche Person oder Rolle für das Ziel"
+          },
+          "milestones": {
+            "type": "array",
+            "description": "Quartalsweise Meilensteine",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quarter": {
+                  "type": "string",
+                  "enum": ["Q1", "Q2", "Q3", "Q4"],
+                  "description": "Quartal des Meilensteins"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Beschreibung des Meilensteins"
+                },
+                "dueDate": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "Fälligkeitsdatum des Meilensteins"
+                }
+              },
+              "required": ["quarter", "description", "dueDate"]
+            }
+          },
+          "reviewDates": {
+            "type": "array",
+            "description": "Geplante Review-Termine",
+            "items": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "required": ["goalId", "description", "responsiblePerson", "milestones"]
+      }
+    }
+  },
+  "required": ["planId", "year", "goals"]
+}

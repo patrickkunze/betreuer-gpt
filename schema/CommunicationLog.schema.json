@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kommunikationslog",
+  "type": "object",
+  "properties": {
+    "logId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Kommunikationseintrags"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Kommunikation im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "contactWith": {
+      "type": "string",
+      "description": "Name oder Rolle der kontaktierte Person oder Organisation (z. B. Klient*in, Ärzt*in, Behörde)"
+    },
+    "channel": {
+      "type": "string",
+      "enum": ["Telefon", "E-Mail", "Persönlich", "Video", "Brief", "Sonstiges"],
+      "description": "Kommunikationskanal"
+    },
+    "content": {
+      "type": "string",
+      "description": "Inhalt der Kommunikation"
+    },
+    "nextSteps": {
+      "type": "string",
+      "description": "Vereinbarte Folgeschritte"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Zusätzliche Anmerkungen zur Kommunikation",
+      "nullable": true
+    }
+  },
+  "required": ["logId", "date", "clientId", "contactWith", "channel", "content"]
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ernährungs- und Flüssigkeitsplan",
+  "type": "object",
+  "properties": {
+    "taskId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der Aufgabe"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Aufgabe im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "taskType": {
+      "type": "string",
+      "enum": ["Beratung", "Dokumentation", "Terminkoordination", "Ernährungs- und Flüssigkeitsplan"],
+      "description": "Art der Aufgabe"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detaillierte Beschreibung der Aufgabe"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["offen", "inBearbeitung", "abgeschlossen"],
+      "description": "Bearbeitungsstatus der Aufgabe"
+    },
+    "legalReference": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Rechtsgrundlagen bzw. Paragraphen"
+    },
+    "timeSpent": {
+      "type": "object",
+      "properties": {
+        "hours": {
+          "type": "number"
+        },
+        "minutes": {
+          "type": "number"
+        }
+      },
+      "description": "Aufgewendete Zeit für die Aufgabe"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext-Feld für Anmerkungen"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      },
+      "description": "Anhänge zur Aufgabe"
+    },
+    "nutritionDetails": {
+      "type": "object",
+      "properties": {
+        "mealTimes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
+          },
+          "description": "Empfohlene Zeitfenster für Mahlzeiten im Format HH:MM"
+        },
+        "foodRestrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Bekannte Nahrungsmittelunverträglichkeiten"
+        },
+        "portionRecommendations": {
+          "type": "string",
+          "description": "Empfohlene Portionsgrößen oder -mengen"
+        },
+        "fluidIntakeProtocol": {
+          "type": "string",
+          "description": "Protokoll bzw. Empfehlungen zur Flüssigkeitsaufnahme"
+        }
+      },
+      "description": "Spezifische Angaben zum Ernährungs- und Flüssigkeitsplan"
+    }
+  },
+  "required": ["taskId", "date", "clientId", "taskType", "description", "status"]
+}

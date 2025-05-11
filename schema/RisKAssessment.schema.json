@@ -1,0 +1,46 @@
+{
+  "$id": "#/definitions/RiskAssessment",
+  "type": "object",
+  "title": "Risikoeinschätzung",
+  "description": "Systematische Aufnahme und Bewertung potenzieller Risiken (gesundheitlich, finanziell, rechtlich).",
+  "properties": {
+    "risikoSzenario": {
+      "type": "string",
+      "title": "Risikoszenario",
+      "description": "Kurze Beschreibung des potenziellen Risikos."
+    },
+    "eintrittswahrscheinlichkeit": {
+      "type": "number",
+      "title": "Eintrittswahrscheinlichkeit",
+      "description": "Wahrscheinlichkeit des Eintretens (als Dezimalwert zwischen 0.0 und 1.0).",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "schadensausmass": {
+      "type": "string",
+      "title": "Schadensausmaß",
+      "description": "Einschätzung der möglichen Schadenshöhe.",
+      "enum": [
+        "niedrig",
+        "mittel",
+        "hoch"
+      ]
+    },
+    "vorgeschlageneGegenmassnahmen": {
+      "type": "array",
+      "title": "Vorgeschlagene Gegenmaßnahmen",
+      "description": "Maßnahmen zur Risikominimierung oder -vermeidung.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "risikoSzenario",
+    "eintrittswahrscheinlichkeit",
+    "schadensausmass",
+    "vorgeschlageneGegenmassnahmen"
+  ],
+  "additionalProperties": false
+}

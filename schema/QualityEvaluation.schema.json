@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QualityEvaluation",
+  "type": "object",
+  "properties": {
+    "evaluationId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der Evaluation"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Evaluation im Format YYYY-MM-DD"
+    },
+    "evaluatorId": {
+      "type": "string",
+      "description": "Kennung der bewertenden Person"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "criteria": {
+      "type": "array",
+      "description": "Liste der Bewertungskriterien",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterionId": {
+            "type": "string",
+            "description": "Eindeutige Kennung des Kriteriums"
+          },
+          "description": {
+            "type": "string",
+            "description": "Beschreibung des Kriteriums"
+          },
+          "score": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "Bewertung auf einer Skala von 1 (sehr schlecht) bis 5 (sehr gut)"
+          },
+          "comment": {
+            "type": "string",
+            "description": "Optionaler Kommentar zur Bewertung"
+          }
+        },
+        "required": ["criterionId", "description", "score"]
+      }
+    },
+    "overallComment": {
+      "type": "string",
+      "description": "Gesamteindruck oder zusammenfassender Kommentar"
+    }
+  },
+  "required": ["evaluationId", "date", "evaluatorId", "clientId", "criteria"]
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Betreuungsaufgabe",
+  "type": "object",
+  "properties": {
+    "taskId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der Aufgabe"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Aufgabe im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "taskType": {
+      "type": "string",
+      "enum": [
+        "Beratung",
+        "Dokumentation",
+        "Terminkoordination",
+        "Barrierefreiheits-Check"
+      ],
+      "description": "Art der Aufgabe"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detaillierte Beschreibung der Aufgabe"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["offen", "inBearbeitung", "abgeschlossen"],
+      "description": "Bearbeitungsstatus der Aufgabe"
+    },
+    "legalReference": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Rechtsgrundlagen bzw. Paragraphen"
+    },
+    "timeSpent": {
+      "type": "object",
+      "properties": {
+        "hours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "minutes": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 59
+        }
+      },
+      "required": [],
+      "description": "Aufgewendete Zeit für die Aufgabe"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext-Feld für Anmerkungen"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      },
+      "description": "Dateianhänge zur Aufgabe"
+    },
+    "safetyAccessibilityNotes": {
+      "type": "object",
+      "description": "Hinweise zu Barrieren und sicherheitsrelevanten Aspekten",
+      "properties": {
+        "architecturalBarriers": {
+          "type": "string",
+          "description": "Bauliche Barrieren (z. B. Treppen, schmale Türen, fehlende Aufzüge)"
+        },
+        "technicalBarriers": {
+          "type": "string",
+          "description": "Technische Barrieren (z. B. fehlende Hilfsmittel, nicht barrierefreie Geräte)"
+        },
+        "communicationBarriers": {
+          "type": "string",
+          "description": "Kommunikative Barrieren (z. B. Sprachbarrieren, fehlende Gebärdensprache)"
+        },
+        "safetyMeasures": {
+          "type": "string",
+          "description": "Notwendige Sicherheitsmaßnahmen (z. B. Sturzprophylaxe, Medikamentensicherung)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ethicsChecklist": {
+      "type": "object",
+      "description": "Leitfaden zur ethischen Bewertung der Entscheidung",
+      "properties": {
+        "respectForAutonomy": {
+          "type": "boolean",
+          "description": "Wurde die Selbstbestimmung der betreuten Person respektiert?"
+        },
+        "beneficence": {
+          "type": "boolean",
+          "description": "Dient die Entscheidung dem Wohl der betreuten Person?"
+        },
+        "nonMaleficence": {
+          "type": "boolean",
+          "description": "Vermeidet die Entscheidung potenziellen Schaden?"
+        },
+        "justice": {
+          "type": "boolean",
+          "description": "Erfolgt die Entscheidung fair und gerecht?"
+        },
+        "individualValuesConsidered": {
+          "type": "string",
+          "description": "Wurden persönliche Werte und Wünsche dokumentiert und berücksichtigt?"
+        },
+        "ethicsNotes": {
+          "type": "string",
+          "description": "Weitere ethische Überlegungen oder Konflikte"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["taskId", "date", "clientId", "taskType", "description", "status"]
+}
+

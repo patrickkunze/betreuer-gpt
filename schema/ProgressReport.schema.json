@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fortschrittsbericht",
+  "type": "object",
+  "properties": {
+    "reportId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Fortschrittsberichts"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum des Berichts im Format YYYY-MM-DD"
+    },
+    "goals": {
+      "type": "array",
+      "description": "Liste der Betreuungsziele",
+      "items": {
+        "type": "object",
+        "properties": {
+          "goalId": {
+            "type": "string",
+            "description": "Eindeutige Kennung des Ziels"
+          },
+          "description": {
+            "type": "string",
+            "description": "Beschreibung des Ziels"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["nichtBegonnen", "inArbeit", "erreicht", "abgebrochen"],
+            "description": "Status des Ziels"
+          },
+          "milestones": {
+            "type": "array",
+            "description": "Erreichte Meilensteine",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deviations": {
+            "type": "string",
+            "description": "Abweichungen vom ursprünglichen Plan",
+            "nullable": true
+          },
+          "plannedAdjustments": {
+            "type": "string",
+            "description": "Geplante Anpassungen zur Zielerreichung",
+            "nullable": true
+          }
+        },
+        "required": ["goalId", "description", "status"]
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Zusätzliche Anmerkungen",
+      "nullable": true
+    }
+  },
+  "required": ["reportId", "clientId", "date", "goals"]
+}

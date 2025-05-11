@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TimelineOverviewItem",
+  "type": "object",
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Ereignisses"
+    },
+    "title": {
+      "type": "string",
+      "description": "Kurztitel oder Bezeichnung des Ereignisses"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Datum und Uhrzeit des Ereignisses im ISO 8601 Format"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["Frist", "Termin", "Ereignis", "Erinnerung", "Gerichtstermin", "Sonstiges"],
+      "description": "Kategorie des Ereignisses"
+    },
+    "description": {
+      "type": "string",
+      "description": "Ausführlichere Beschreibung oder Kontextinformationen"
+    },
+    "relatedClientId": {
+      "type": "string",
+      "description": "Referenz zur betreuten Person"
+    },
+    "isCritical": {
+      "type": "boolean",
+      "description": "Markierung, ob das Ereignis besonders wichtig oder kritisch ist"
+    },
+    "linkedTaskIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Liste verknüpfter Aufgaben-IDs (z.B. zur Nachverfolgung)"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      },
+      "description": "Dateianhänge zum Ereignis"
+    }
+  },
+  "required": ["eventId", "title", "dateTime", "category", "relatedClientId"]
+}

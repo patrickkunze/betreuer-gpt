@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fortbildungsnachweis",
+  "type": "object",
+  "properties": {
+    "trainingId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der Fortbildungsmaßnahme"
+    },
+    "title": {
+      "type": "string",
+      "description": "Titel der Fortbildungsmaßnahme"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Anbieter der Fortbildung"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Fortbildung (Format: YYYY-MM-DD)"
+    },
+    "duration": {
+      "type": "object",
+      "description": "Dauer der Fortbildung",
+      "properties": {
+        "hours": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Stundenzahl der Fortbildung"
+        },
+        "minutes": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 59,
+          "description": "Minutenzahl der Fortbildung"
+        }
+      },
+      "required": ["hours"]
+    },
+    "certificate": {
+      "type": "object",
+      "description": "Zertifikat zur Fortbildung",
+      "properties": {
+        "fileName": {
+          "type": "string",
+          "description": "Dateiname des Zertifikats"
+        },
+        "fileUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL zum Zertifikat"
+        }
+      },
+      "required": ["fileName", "fileUrl"]
+    }
+  },
+  "required": ["trainingId", "title", "provider", "date", "duration"]
+}

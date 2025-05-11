@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "StakeholderDirectory",
+  "type": "object",
+  "properties": {
+    "stakeholderId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Kooperationspartners"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name der Institution oder Organisation"
+    },
+    "contactPerson": {
+      "type": "string",
+      "description": "Name der Kontaktperson"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "E-Mail-Adresse des Ansprechpartners"
+    },
+    "phone": {
+      "type": "string",
+      "pattern": "^\\+?[0-9\\-\\s]+$",
+      "description": "Telefonnummer im internationalen Format"
+    },
+    "address": {
+      "type": "string",
+      "description": "Postanschrift des Partners"
+    },
+    "responsibilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Zuständigkeitsbereiche oder Themenfelder"
+    },
+    "servicesOffered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Leistungsangebote der Institution"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitextfeld für zusätzliche Informationen",
+      "maxLength": 1000
+    }
+  },
+  "required": ["stakeholderId", "name", "contactPerson", "email", "phone", "responsibilities", "servicesOffered"]
+}

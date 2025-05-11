@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Betreuungsübergabeprotokoll",
+  "type": "object",
+  "properties": {
+    "handoverId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Übergabeprotokolls"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Übergabe im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "currentSituation": {
+      "type": "string",
+      "description": "Aktuelle Situation der betreuten Person"
+    },
+    "openTasks": {
+      "type": "array",
+      "description": "Liste offener Aufgaben",
+      "items": {
+        "type": "string"
+      }
+    },
+    "importantContacts": {
+      "type": "array",
+      "description": "Wichtige Kontaktpersonen",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "contactInfo": {
+            "type": "string"
+          }
+        },
+        "required": ["name", "role", "contactInfo"]
+      }
+    },
+    "risks": {
+      "type": "string",
+      "description": "Einschätzung relevanter Risiken"
+    },
+    "recommendations": {
+      "type": "string",
+      "description": "Empfehlungen für die Nachfolge-Betreuung"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitextfeld für zusätzliche Anmerkungen"
+    },
+    "attachments": {
+      "type": "array",
+      "description": "Anhänge zum Übergabeprotokoll",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      }
+    }
+  },
+  "required": ["handoverId", "date", "clientId", "currentSituation"]
+}

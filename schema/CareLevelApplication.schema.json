@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CareLevelApplication",
+  "type": "object",
+  "properties": {
+    "applicationId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Antrags"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "submissionDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Antragstellung im Format YYYY-MM-DD"
+    },
+    "applicationType": {
+      "type": "string",
+      "enum": ["Erstantrag", "Höherstufung", "Widerspruch", "Neubewertung"],
+      "description": "Art des Antrags"
+    },
+    "documentsRequired": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Liste der benötigten Unterlagen"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date",
+      "description": "Frist zur Einreichung oder Reaktion (falls relevant)"
+    },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "phone": { "type": "string" },
+          "email": {
+            "type": "string",
+            "format": "email"
+          }
+        },
+        "required": ["name", "role"]
+      },
+      "description": "Liste relevanter Ansprechpartner*innen"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["offen", "inBearbeitung", "bewilligt", "abgelehnt", "zurückgezogen"],
+      "description": "Aktueller Bearbeitungsstatus des Antrags"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext-Feld für ergänzende Hinweise"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": { "type": "string" },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      },
+      "description": "Liste hochgeladener Dateien im Zusammenhang mit dem Antrag"
+    }
+  },
+  "required": ["applicationId", "clientId", "submissionDate", "applicationType", "status"]
+}

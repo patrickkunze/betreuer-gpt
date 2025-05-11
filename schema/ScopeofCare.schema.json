@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Betreuungsumfang",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "includedAreas": {
+      "type": "array",
+      "description": "Liste der übernommenen Betreuungsbereiche gemäß §§ 1896 ff. BGB",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Gesundheitssorge",
+          "Aufenthaltsbestimmung",
+          "Vermögenssorge",
+          "Wohnungsangelegenheiten",
+          "Behördengänge",
+          "Post- und Fernmeldeverkehr",
+          "Vertretung vor Gericht",
+          "Rechts-, Antrags- und Sozialangelegenheiten"
+        ]
+      }
+    },
+    "excludedAreas": {
+      "type": "array",
+      "description": "Optional: Ausgeschlossene Betreuungsbereiche",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Gesundheitssorge",
+          "Aufenthaltsbestimmung",
+          "Vermögenssorge",
+          "Wohnungsangelegenheiten",
+          "Behördengänge",
+          "Post- und Fernmeldeverkehr",
+          "Vertretung vor Gericht",
+          "Rechts-, Antrags- und Sozialangelegenheiten"
+        ]
+      }
+    },
+    "legalBasis": {
+      "type": "string",
+      "description": "Rechtsgrundlage für den Umfang, z. B. § 1896 Abs. 2 BGB",
+      "pattern": "^§\\s?\\d+[a-zA-Z]*\\s?Abs\\.\\s?\\d+\\s?BGB$"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Zusätzliche Erläuterungen oder Hinweise",
+      "maxLength": 1000
+    }
+  },
+  "required": ["clientId", "includedAreas"]
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BiographyTimeline",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "entries": {
+      "type": "array",
+      "description": "Liste biografischer Einträge in chronologischer Reihenfolge",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entryId": {
+            "type": "string",
+            "description": "Eindeutige Kennung des Biografieeintrags"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Datum des Ereignisses im Format YYYY-MM-DD"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Geburt",
+              "Schulbildung",
+              "Ausbildung",
+              "Beruf",
+              "Familie",
+              "Wohnort",
+              "Gesundheit",
+              "Unfall",
+              "Krankheit",
+              "Pflege",
+              "Behinderung",
+              "Beziehung",
+              "Soziales Umfeld",
+              "Rechtliches",
+              "Sonstiges"
+            ],
+            "description": "Kategorie des Ereignisses"
+          },
+          "title": {
+            "type": "string",
+            "description": "Kurztitel oder Bezeichnung des Ereignisses"
+          },
+          "description": {
+            "type": "string",
+            "description": "Ausführliche Beschreibung des Ereignisses oder Meilensteins"
+          },
+          "location": {
+            "type": "string",
+            "description": "Ort des Ereignisses",
+            "nullable": true
+          },
+          "attachments": {
+            "type": "array",
+            "description": "Dateien oder Dokumente zum Ereignis",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fileName": {
+                  "type": "string",
+                  "description": "Dateiname"
+                },
+                "fileUrl": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "URL zur Datei"
+                }
+              },
+              "required": ["fileName", "fileUrl"]
+            }
+          }
+        },
+        "required": ["entryId", "date", "category", "title", "description"]
+      }
+    }
+  },
+  "required": ["clientId", "entries"]
+}

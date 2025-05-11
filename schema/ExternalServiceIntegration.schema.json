@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ExternalServiceIntegration",
+  "type": "object",
+  "properties": {
+    "serviceId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des externen Dienstes"
+    },
+    "name": {
+      "type": "string",
+      "description": "Anzeigename des externen Dienstes"
+    },
+    "description": {
+      "type": "string",
+      "description": "Kurze Beschreibung des Dienstes"
+    },
+    "baseUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Basis-URL des externen Dienstes"
+    },
+    "authentication": {
+      "type": "object",
+      "description": "Authentifizierungsdetails für die Anbindung",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["APIKey", "OAuth2", "BasicAuth", "None"],
+          "description": "Art der Authentifizierung"
+        },
+        "credentials": {
+          "type": "object",
+          "description": "Anmeldedaten oder Tokens (je nach Authentifizierungstyp)",
+          "properties": {
+            "apiKey": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "clientId": {
+              "type": "string"
+            },
+            "clientSecret": {
+              "type": "string"
+            },
+            "tokenUrl": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": ["type"]
+    },
+    "endpoints": {
+      "type": "array",
+      "description": "Liste der nutzbaren Endpunkte",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name des Endpunkts"
+          },
+          "path": {
+            "type": "string",
+            "description": "Pfad relativ zur Basis-URL"
+          },
+          "method": {
+            "type": "string",
+            "enum": ["GET", "POST", "PUT", "DELETE", "PATCH"],
+            "description": "HTTP-Methode"
+          },
+          "description": {
+            "type": "string",
+            "description": "Zweck oder Beschreibung des Endpunkts"
+          },
+          "requestFormat": {
+            "type": "string",
+            "enum": ["JSON", "XML", "FORM", "MULTIPART"],
+            "description": "Format der Anfragedaten"
+          },
+          "responseFormat": {
+            "type": "string",
+            "enum": ["JSON", "XML"],
+            "description": "Format der Rückgabedaten"
+          }
+        },
+        "required": ["name", "path", "method", "requestFormat", "responseFormat"]
+      }
+    },
+    "supportedDataTypes": {
+      "type": "array",
+      "description": "Unterstützte Datentypen oder Objekte, die übertragen werden können",
+      "items": {
+        "type": "string"
+      }
+    },
+    "documentationUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link zur technischen Dokumentation des Dienstes"
+    }
+  },
+  "required": ["serviceId", "name", "baseUrl", "authentication", "endpoints"]
+}

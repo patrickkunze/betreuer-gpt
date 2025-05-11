@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Gerichtliche Eingabe",
+  "type": "object",
+  "properties": {
+    "submissionId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der gerichtlichen Eingabe"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Einreichung im Format YYYY-MM-DD"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Betreff der gerichtlichen Eingabe"
+    },
+    "legalArguments": {
+      "type": "string",
+      "description": "Rechtliche Argumentation zur Unterstützung der Eingabe"
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Liste der beigefügten Beweismittel",
+      "items": {
+        "type": "string"
+      }
+    },
+    "motions": {
+      "type": "array",
+      "description": "Liste der gestellten Anträge",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "description": "Beigefügte Dateien zur gerichtlichen Eingabe",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitext für zusätzliche Anmerkungen"
+    }
+  },
+  "required": ["submissionId", "date", "clientId", "subject", "legalArguments"]
+}

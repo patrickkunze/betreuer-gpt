@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Datenschutz- und Schweigepflichtserklärung",
+  "type": "object",
+  "properties": {
+    "consentId": {
+      "type": "string",
+      "description": "Eindeutige Kennung der Einwilligung"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "dataTypes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Arten der erfassten bzw. verarbeiteten Daten"
+    },
+    "purpose": {
+      "type": "string",
+      "description": "Zweck der Datenverarbeitung"
+    },
+    "validFrom": {
+      "type": "string",
+      "format": "date",
+      "description": "Beginn der Gültigkeit im Format YYYY-MM-DD"
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date",
+      "description": "Ende der Gültigkeit im Format YYYY-MM-DD"
+    },
+    "signatory": {
+      "type": "object",
+      "description": "Informationen zur unterzeichnenden Person",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["Klient*in", "Betreuer*in", "gesetzliche Vertretung", "sonstige"]
+        },
+        "signatureDate": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": ["name", "role", "signatureDate"]
+    }
+  },
+  "required": ["consentId", "clientId", "dataTypes", "purpose", "validFrom", "validUntil", "signatory"]
+}

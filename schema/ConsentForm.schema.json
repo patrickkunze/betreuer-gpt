@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Einwilligungs- und Informationsdokument",
+  "type": "object",
+  "properties": {
+    "formId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Dokuments"
+    },
+    "documentType": {
+      "type": "string",
+      "description": "Typ des Dokuments (z. B. Patientenverfügung, Vorsorgevollmacht)",
+      "enum": ["Patientenverfügung", "Vorsorgevollmacht", "Betreuungsverfügung", "Datenschutz-Einwilligung", "Sonstiges"]
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Ausstellung bzw. Unterzeichnung (Format: YYYY-MM-DD)"
+    },
+    "signatories": {
+      "type": "array",
+      "description": "Liste der unterzeichnenden Personen",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name der unterzeichnenden Person"
+          },
+          "role": {
+            "type": "string",
+            "description": "Rolle der unterzeichnenden Person (z. B. betreute Person, Bevollmächtigter, Arzt)",
+            "enum": ["betreute Person", "Bevollmächtigter", "Arzt", "Betreuer", "Zeuge", "Sonstige"]
+          }
+        },
+        "required": ["name", "role"]
+      }
+    },
+    "validityScope": {
+      "type": "string",
+      "description": "Gültigkeitsbereich oder inhaltlicher Anwendungsbereich des Dokuments"
+    },
+    "attachments": {
+      "type": "array",
+      "description": "Anhänge zum Einwilligungsdokument",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string",
+            "description": "Name der Datei"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL zur Datei"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      }
+    }
+  },
+  "required": ["formId", "documentType", "date", "signatories", "validityScope"]
+}
