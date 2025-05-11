@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Betreuungsschreiben",
+  "type": "object",
+  "required": [
+    "kopfzeile",
+    "betreff",
+    "anrede",
+    "einleitung",
+    "klartextZusammenfassung",
+    "rechtlicheGrundlage",
+    "bezugnahmen",
+    "vorstellungBetreutePerson",
+    "persoenlicheSituation",
+    "anlassbezogeneSachverhaltsdarstellung",
+    "risikoFolgenbewertung",
+    "empfehlungGeplantesVorgehen",
+    "handlungsTerminplan",
+    "nachverfolgung",
+    "erwarteteMitwirkung",
+    "hinweisUnterstuetzung",
+    "abschlussformel",
+    "anlagen"
+  ],
+  "properties": {
+    "kopfzeile": {
+      "type": "object",
+      "description": "Angaben zu Betreuungsverein, Kontaktdaten, Datum und Aktenzeichen der Bestellungsurkunde",
+      "required": ["verein", "ansprechpartner", "adresse", "telefon", "email", "datum", "aktenzeichen"],
+      "properties": {
+        "verein": { "type": "string", "example": "Sozialdienst katholischer Frauen e.V." },
+        "ansprechpartner": { "type": "string", "example": "Patrick Muster" },
+        "adresse": { "type": "string", "example": "Musterstraße 1, 12345 Musterstadt" },
+        "telefon": { "type": "string", "example": "+49 30 12345678" },
+        "email": { "type": "string", "format": "email", "example": "patrick@example.org" },
+        "datum": { "type": "string", "format": "date", "example": "2025-05-12" },
+        "aktenzeichen": { "type": "string", "example": "Betreuungsgericht XX / AZ 1234/2024" }
+      }
+    },
+    "betreff": {
+      "type": "string",
+      "description": "Kurz und prägnanter Betreff des Schreibens",
+      "example": "Information zu meiner Betreuungstätigkeit für Frau Müller"
+    },
+    "anrede": {
+      "type": "string",
+      "description": "Formelle Anrede",
+      "example": "Sehr geehrte Frau Müller,"
+    },
+    "einleitung": {
+      "type": "string",
+      "description": "Zweck des Schreibens und Hinweis auf die Gerichtsbestellung",
+      "example": "Mit diesem Schreiben informiere ich Sie über meine Tätigkeit als Ihre rechtliche Betreuerin..."
+    },
+    "klartextZusammenfassung": {
+      "type": "string",
+      "description": "1–2 Sätze mit Hauptanliegen und Kernaussage",
+      "example": "Ich empfehle, die bevorstehende Wohnungsangelegenheit wie folgt zu regeln..."
+    },
+    "rechtlicheGrundlage": {
+      "type": "object",
+      "description": "Verweis auf Bestellungsurkunde und Umfang der Befugnisse",
+      "required": ["urkundenDatum", "gericht", "aktenzeichen", "befugnisse"],
+      "properties": {
+        "urkundenDatum": { "type": "string", "format": "date", "example": "2024-10-15" },
+        "gericht": { "type": "string", "example": "Amtsgericht Musterstadt" },
+        "aktenzeichen": { "type": "string", "example": "Az. 1234/2024" },
+        "befugnisse": { "type": "string", "example": "Vertretung in Gesundheits- und Vermögensangelegenheiten" }
+      }
+    },
+    "bezugnahmen": {
+      "type": "array",
+      "description": "Verweise auf frühere Schriftstücke und relevante Rechtsgrundlagen",
+      "items": {
+        "type": "object",
+        "required": ["datum", "betreff", "quelle"],
+        "properties": {
+          "datum": { "type": "string", "format": "date" },
+          "betreff": { "type": "string" },
+          "quelle": { "type": "string", "description": "z. B. Gesetz, Urteil oder internes Memo" }
+        }
+      }
+    },
+    "vorstellungBetreutePerson": {
+      "type": "object",
+      "description": "Daten und Kurzbiografie der betreuten Person",
+      "required": ["name", "alter", "familienstand", "lebenssituation"],
+      "properties": {
+        "name": { "type": "string" },
+        "alter": { "type": "integer" },
+        "familienstand": { "type": "string" },
+        "lebenssituation": { "type": "string" }
+      }
+    },
+    "persoenlicheSituation": {
+      "type": "object",
+      "description": "Gesundheit, soziale Lage, Wünsche und Werte der betreuten Person",
+      "required": ["gesundheitszustand", "sozialeLebenslage", "wuensche"],
+      "properties": {
+        "gesundheitszustand": { "type": "string" },
+        "sozialeLebenslage": { "type": "string" },
+        "wuensche": { "type": "string" }
+      }
+    },
+    "anlassbezogeneSachverhaltsdarstellung": {
+      "type": "string",
+      "description": "Beschreibung des konkreten Anlasses und relevanter Fakten"
+    },
+    "risikoFolgenbewertung": {
+      "type": "string",
+      "description": "Risiken und mögliche rechtliche, finanzielle oder gesundheitliche Folgen bei Untätigkeit"
+    },
+    "empfehlungGeplantesVorgehen": {
+      "type": "string",
+      "description": "Handlungsoptionen, Abwägung nach den Wünschen und konkreter Vorschlag"
+    },
+    "handlungsTerminplan": {
+      "type": "array",
+      "description": "Zeitstrahl mit Fristen, Meilensteinen und Zuständigkeiten",
+      "items": {
+        "type": "object",
+        "required": ["frist", "meilenstein", "verantwortlich"],
+        "properties": {
+          "frist": { "type": "string", "format": "date" },
+          "meilenstein": { "type": "string" },
+          "verantwortlich": { "type": "string" }
+        }
+      }
+    },
+    "nachverfolgung": {
+      "type": "object",
+      "description": "Geplantes Rückmelde-Datum oder -Bedingung und nächste Schritte",
+      "required": ["rueckmeldeDatum", "naechsteSchritte"],
+      "properties": {
+        "rueckmeldeDatum": { "type": "string", "format": "date" },
+        "naechsteSchritte": { "type": "string" }
+      }
+    },
+    "erwarteteMitwirkung": {
+      "type": "string",
+      "description": "Benötigte Unterlagen, Unterschriften und Fristen"
+    },
+    "hinweisUnterstuetzung": {
+      "type": "string",
+      "description": "Kontaktzeiten, Vertretungsregelung und Beratungsangebot"
+    },
+    "abschlussformel": {
+      "type": "string",
+      "description": "Formulierung des Grußes und Unterschriftsangabe",
+      "example": "Mit freundlichen Grüßen\nPatrick Muster"
+    },
+    "anlagen": {
+      "type": "array",
+      "description": "Liste der beizufügenden Dokumente",
+      "items": {
+        "type": "string",
+        "example": "Kopie der Bestellungsurkunde"
+      }
+    }
+  }
+}
