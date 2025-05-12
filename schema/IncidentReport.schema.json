@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IncidentReport",
+  "type": "object",
+  "properties": {
+    "incidentId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Vorfalls"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Datum und Uhrzeit des Vorfalls im ISO 8601 Format"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "involvedPersons": {
+      "type": "array",
+      "description": "Liste der beteiligten Personen",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "Detaillierte Beschreibung des Vorfalls"
+    },
+    "immediateActions": {
+      "type": "string",
+      "description": "Unmittelbar nach dem Vorfall ergriffene Maßnahmen"
+    },
+    "followUp": {
+      "type": "string",
+      "description": "Maßnahmen zur Nachverfolgung oder weiterem Vorgehen"
+    },
+    "attachments": {
+      "type": "array",
+      "description": "Dateianhänge zum Vorfallbericht",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitextfeld für zusätzliche Anmerkungen"
+    }
+  },
+  "required": ["incidentId", "dateTime", "clientId", "description", "immediateActions", "followUp"]
+}

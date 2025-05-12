@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "CulturalLanguageProfile",
+  "title": "CulturalCompetenceProfile",
   "type": "object",
   "properties": {
     "profileId": {
       "type": "string",
-      "description": "Eindeutige Kennung des kulturell-sprachlichen Profils"
+      "description": "Eindeutige Kennung des kulturellen Kompetenzprofils"
     },
     "clientId": {
       "type": "string",
@@ -26,10 +26,23 @@
         "type": "string"
       }
     },
-    "culturalConsiderations": {
+    "religion": {
       "type": "string",
-      "description": "Kulturelle Besonderheiten oder relevante Hinweise"
+      "description": "Religiöse Zugehörigkeit oder Orientierung der betreuten Person"
+    },
+    "valuesAndNorms": {
+      "type": "string",
+      "description": "Wichtige kulturelle Werte und soziale Normen, die beachtet werden sollten"
+    },
+    "communicationHints": {
+      "type": "string",
+      "description": "Kulturspezifische Hinweise zur Kommunikation"
+    },
+    "careHints": {
+      "type": "string",
+      "description": "Kulturspezifische Hinweise zur Betreuung"
     }
   },
   "required": ["profileId", "clientId", "nativeLanguage", "interpreterNeeded"]
 }
+

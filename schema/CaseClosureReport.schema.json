@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CaseClosureReport",
+  "type": "object",
+  "properties": {
+    "reportId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Abschlussberichts"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "closureDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Beendigung des Betreuungsverhältnisses"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Zusammenfassung des Betreuungsverlaufs"
+    },
+    "achievedGoals": {
+      "type": "string",
+      "description": "Erreichte Ziele während der Betreuung"
+    },
+    "remainingRisks": {
+      "type": "string",
+      "description": "Verbleibende Risiken nach Abschluss"
+    },
+    "followUpRecommendations": {
+      "type": "string",
+      "description": "Empfehlungen für eine mögliche Nachbetreuung"
+    },
+    "attachments": {
+      "type": "array",
+      "description": "Anhänge zum Abschlussbericht",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string",
+            "description": "Name der Datei"
+          },
+          "fileUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL zur Datei"
+          }
+        },
+        "required": ["fileName", "fileUrl"]
+      }
+    },
+    "author": {
+      "type": "string",
+      "description": "Verfasser*in des Berichts"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Zeitpunkt der Erstellung des Berichts"
+    }
+  },
+  "required": ["reportId", "clientId", "closureDate", "summary", "achievedGoals", "remainingRisks", "followUpRecommendations"]
+}

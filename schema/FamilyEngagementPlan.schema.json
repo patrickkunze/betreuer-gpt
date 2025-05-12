@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FamilyEngagementPlan",
+  "type": "object",
+  "properties": {
+    "planId": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Einbindungsplans"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Kennung der betreuten Person"
+    },
+    "communicationChannels": {
+      "type": "array",
+      "description": "Genutzte Kommunikationskanäle zur Einbindung",
+      "items": {
+        "type": "string",
+        "enum": ["Telefon", "E-Mail", "Videokonferenz", "Persönlich", "Messenger", "Brief"]
+      }
+    },
+    "communicationFrequency": {
+      "type": "string",
+      "description": "Vereinbarte Frequenz der Kommunikation",
+      "enum": ["täglich", "wöchentlich", "zweiwöchentlich", "monatlich", "nach Bedarf"]
+    },
+    "responsiblePersons": {
+      "type": "array",
+      "description": "Verantwortliche Personen für die Kommunikation",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["Betreuer", "Angehöriger", "Fachkraft", "Sonstige"]
+          },
+          "contact": {
+            "type": "string"
+          }
+        },
+        "required": ["name", "role"]
+      }
+    },
+    "documentationRequirements": {
+      "type": "string",
+      "description": "Vorgaben zur Dokumentation der Kommunikation"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freitextliche Zusatzinformationen"
+    }
+  },
+  "required": ["planId", "clientId", "communicationChannels", "communicationFrequency", "responsiblePersons"]
+}
