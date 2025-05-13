@@ -1,0 +1,16 @@
+// modules/notificationLogEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/notificationLogEntry.json",
+  "title": "Terminerinnerungs-Log",
+  "type": "object",
+  "properties": {
+    "appointmentId": { "type": "string" },
+    "recipient": { "$ref": "../modules/person.json" },
+    "channel": { "type": "string", "enum": ["email","phone","sms"] },
+    "sentAt": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "enum": ["pending","sent","failed"] }
+  },
+  "required": ["appointmentId","recipient","channel","sentAt","status"],
+  "additionalProperties": false
+}

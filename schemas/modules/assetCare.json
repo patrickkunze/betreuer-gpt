@@ -1,0 +1,18 @@
+// modules/assetCare.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":".../assetCare.json",
+  "title":"Vermögenssorge",
+  "type":"object",
+  "properties":{
+    "einnahmen_ausgaben":    { "type":"string" },
+    "entwicklung_vermoegen": { "type":"string" },
+    "absprachen":            { "type":"string" },
+    "verwahrgeldkonten":     { "type":"string" },
+    "bestattungsvorsorge":   { "type":"string" },
+    "schulden":              { "type":"string" },
+    "besondere_gegenstaende":{ "type":"string" },
+    "einwilligungsvorbehalt":{ "type":"string" }
+  },
+  "additionalProperties": false
+}

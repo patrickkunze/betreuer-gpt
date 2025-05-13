@@ -1,0 +1,21 @@
+// schemas/dokumentenarchiv-index.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/dokumentenarchiv-index.json",
+  "title": "Dokumentenarchiv-Index",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "documents": {
+          "type": "array",
+          "items": { "$ref": "modules/documentIndexEntry.json" }
+        }
+      },
+      "required": ["documents"],
+      "additionalProperties": false
+    }
+  ]
+}

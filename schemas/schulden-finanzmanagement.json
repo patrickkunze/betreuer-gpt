@@ -1,0 +1,22 @@
+// schemas/schulden-finanzmanagement.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/schulden-finanzmanagement.json",
+  "title": "Schulden- und Finanzmanagement",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "transactions": {
+          "type": "array",
+          "items": { "$ref": "modules/financialTransaction.json" }
+        }
+      },
+      "required": ["transactions"],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,17 @@
+// schemas/modules/medicationPlan.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/medicationPlan.json",
+  "title": "Medication Plan",
+  "type": "object",
+  "properties": {
+    "medications": {
+      "type": "array",
+      "items": { "$ref": "medication.json" }
+    },
+    "startDate": { "type": "string", "format": "date" },
+    "endDate": { "type": "string", "format": "date" }
+  },
+  "required": ["medications"],
+  "additionalProperties": false
+}

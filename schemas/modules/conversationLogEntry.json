@@ -1,0 +1,17 @@
+// modules/conversationLogEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/conversationLogEntry.json",
+  "title": "Gesprächsprotokoll-Eintrag",
+  "type":"object",
+  "properties":{
+    "date":{"type":"string","format":"date-time"},
+    "participants":{
+      "type":"array","items":{"$ref":"../modules/person.json"}
+    },
+    "topics":{"type":"array","items":{"type":"string"}},
+    "agreements":{"type":"string"}
+  },
+  "required":["date","participants"],
+  "additionalProperties": false
+}

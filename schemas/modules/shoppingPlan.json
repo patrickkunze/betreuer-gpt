@@ -1,0 +1,24 @@
+// schemas/modules/shoppingPlan.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/shoppingPlan.json",
+  "title": "Shopping and Supply Plan",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "article": { "type": "string" },
+          "quantity": { "type": "integer" },
+          "supplier": { "type": "string" },
+          "status": { "type": "string" }
+        },
+        "required": ["article","quantity"]
+      }
+    }
+  },
+  "required": ["items"],
+  "additionalProperties": false
+}

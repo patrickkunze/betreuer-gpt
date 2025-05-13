@@ -1,0 +1,14 @@
+// schemas/modules/carePlanGoal.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/carePlanGoal.json",
+  "title": "Care Plan Goal",
+  "type": "object",
+  "properties": {
+    "goalId": { "type": "string" },
+    "description": { "type": "string" },
+    "priority": { "type": "string", "enum": ["low","medium","high"] }
+  },
+  "required": ["goalId","description"],
+  "additionalProperties": false
+}

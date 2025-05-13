@@ -1,0 +1,24 @@
+// schemas/gespraechsnotiz.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/gespraechsnotiz.json",
+  "title": "Strukturierte Dokumentation von Gesprächen",
+  "description": "Version 2.0 gemäß Musterschema",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/conversationMeta.json" },
+    { "$ref": "modules/conversationSummary.json" },
+    { "$ref": "modules/conversationCentralPoints.json" },
+    { "$ref": "modules/measurePlan.json" },
+    { "$ref": "modules/evaluationReflection.json" }
+  ],
+  "required": [
+    "meta",
+    "zusammenfassung",
+    "zentrale_punkte",
+    "massnahmen",
+    "evaluation_reflexion"
+  ],
+  "additionalProperties": false
+}

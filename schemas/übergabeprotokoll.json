@@ -1,0 +1,12 @@
+// schemas/übergabeprotokoll.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/übergabeprotokoll.json",
+  "title": "Übergabeprotokoll",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/handoverProtocol.json" }
+  ],
+  "additionalProperties": false
+}

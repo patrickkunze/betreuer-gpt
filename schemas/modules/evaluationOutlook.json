@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/evaluationOutlook.json",
+  "title": "Bewertung & Ausblick",
+  "type": "object",
+  "properties": {
+    "bewertung_ausblick": {
+      "type": "object",
+      "properties": {
+        "umfang_betreuung":      { "type":"string" },
+        "veraenderungen":        { "type":"string" },
+        "ziele_naechstes_jahr":  { "type":"string" },
+        "ressourcen_umfeld":     { "type":"string" },
+        "sichtweise_betreueter": { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["bewertung_ausblick"],
+  "additionalProperties": false
+}

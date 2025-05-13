@@ -1,0 +1,14 @@
+// modules/emergencyContact.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/emergencyContact.json",
+  "title": "Notfallkontakt",
+  "type":"object",
+  "properties":{
+    "person":{"$ref":"../modules/person.json"},
+    "relationship":{"type":"string"},
+    "priority":{"type":"integer","minimum":1}
+  },
+  "required":["person","relationship"],
+  "additionalProperties": false
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/baseDocument.json",
+  "title": "Base Document Schema",
+  "description": "Grundlegendes Schema für alle Betreuungsdokumente mit gemeinsamen Metadaten und Typ-Angabe.",
+  "type": "object",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Eindeutiger Bezeichner der Ressource (URI)"
+    },
+    "$schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "Verweis auf das JSON-Schema, gegen das validiert wird"
+    },
+    "$type": {
+      "type": "string",
+      "description": "Dokumenttyp für Routing und Schema-Auswahl"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[A-Za-z0-9]+)?$",
+      "description": "Dokumentversion (Semantic Versioning)"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Erstellungszeitpunkt in ISO 8601"
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Urheber/Autor des Dokuments"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Zeitpunkt der letzten Änderung"
+    },
+    "updatedBy": {
+      "type": "string",
+      "description": "Letzter Bearbeiter"
+    }
+  },
+  "required": ["$id", "$schema", "$type", "createdAt", "createdBy"],
+  "additionalProperties": true
+}

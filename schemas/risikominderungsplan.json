@@ -1,0 +1,12 @@
+// schemas/risikominderungsplan.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/risikominderungsplan.json",
+  "title": "Risikominderungsplan",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/riskMitigationAction.json" }
+  ],
+  "additionalProperties": false
+}

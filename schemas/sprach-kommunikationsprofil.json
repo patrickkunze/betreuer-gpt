@@ -1,0 +1,12 @@
+// schemas/sprach-kommunikationsprofil.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/sprach-kommunikationsprofil.json",
+  "title": "Sprach- und Kommunikationsprofil",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/languageProfile.json" }
+  ],
+  "additionalProperties": false
+}

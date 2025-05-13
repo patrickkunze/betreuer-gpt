@@ -1,0 +1,12 @@
+// schemas/barrierefreiheits-assessment.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/barrierefreiheits-assessment.json",
+  "title": "Barrierefreiheits-Assessment",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/accessibilityAssessment.json" }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+// schemas/gerichtliche-dokumente.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/gerichtliche-dokumente.json",
+  "title": "Gerichtliche Dokumente",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "modules/legalProceeding.json" },
+    { "$ref": "modules/powerOfAttorney.json" },
+    { "$ref": "modules/courtCorrespondence.json" }
+  ],
+  "additionalProperties": false
+}

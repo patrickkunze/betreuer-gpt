@@ -1,0 +1,15 @@
+// schemas/modules/serviceEvaluation.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/serviceEvaluation.json",
+  "title":"External Service Evaluation",
+  "type":"object",
+  "properties":{
+    "provider":{"type":"string"},
+    "criteria":{"type":"array","items":{"type":"string"}},
+    "rating":{"type":"number","minimum":1,"maximum":5},
+    "recommendation":{"type":"string"}
+  },
+  "required":["provider","criteria","rating"],
+  "additionalProperties": false
+}

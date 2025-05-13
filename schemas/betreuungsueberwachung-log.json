@@ -1,0 +1,22 @@
+// schemas/betreuungsueberwachung-log.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuungsueberwachung-log.json",
+  "title": "Betreuungsüberwachung-Log",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "items": { "$ref": "modules/monitoringLogEntry.json" }
+        }
+      },
+      "required": ["entries"],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

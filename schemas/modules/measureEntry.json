@@ -1,0 +1,15 @@
+// schemas/modules/measureEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/measureEntry.json",
+  "title": "Measure Entry",
+  "type": "object",
+  "properties": {
+    "aufgabe":        { "type": "string" },
+    "verantwortlich": { "type": "string" },
+    "frist":         { "type": "string", "format": "date" },
+    "intervention":  { "type": "string" }
+  },
+  "required": ["aufgabe","verantwortlich"],
+  "additionalProperties": false
+}

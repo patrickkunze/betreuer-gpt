@@ -1,0 +1,14 @@
+// schemas/modules/trainingPlan.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/trainingPlan.json",
+  "title":"Training Plan",
+  "type":"object",
+  "properties":{
+    "plannedTrainings":{
+      "type":"array","items":{"$ref":"trainingRecord.json"}
+    }
+  },
+  "required":["plannedTrainings"],
+  "additionalProperties": false
+}

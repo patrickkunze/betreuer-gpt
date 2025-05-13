@@ -1,0 +1,15 @@
+// schemas/modules/caseClosureReport.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/caseClosureReport.json",
+  "title": "Case Closure Report",
+  "type": "object",
+  "properties": {
+    "summary": { "type":"string" },
+    "achievedGoals": { "type":"array","items":{"type":"string"} },
+    "openIssues": { "type":"array","items":{"type":"string"} },
+    "recommendations": { "type":"string" }
+  },
+  "required":["summary","achievedGoals"],
+  "additionalProperties": false
+}

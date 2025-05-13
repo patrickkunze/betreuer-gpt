@@ -1,0 +1,12 @@
+// schemas/interdisziplinäres-team-protokoll.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/interdisziplinäres-team-protokoll.json",
+  "title": "Interdisziplinäres Team-Protokoll",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/interdisciplinaryTeamProtocol.json" }
+  ],
+  "additionalProperties": false
+}

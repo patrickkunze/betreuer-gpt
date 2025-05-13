@@ -1,0 +1,21 @@
+// schemas/dokumentations-checkpoint.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/dokumentations-checkpoint.json",
+  "title": "Dokumentations-Checkpoint",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "checks": {
+          "type": "array",
+          "items": { "$ref": "modules/checkpointEntry.json" }
+        }
+      },
+      "required": ["checks"],
+      "additionalProperties": false
+    }
+  ]
+}

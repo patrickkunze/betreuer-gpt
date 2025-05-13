@@ -1,0 +1,14 @@
+// modules/supportProvision.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":".../supportProvision.json",
+  "title":"Unterstützung & Versorgung",
+  "type":"object",
+  "properties":{
+    "assistenzleistungen": { "type":"string" },
+    "akzeptanz_betreueter": { "type":"string" },
+    "bewertung_leistung":   { "type":"string" },
+    "taetigkeiten_betreuer":{ "type":"string" }
+  },
+  "additionalProperties": false
+}

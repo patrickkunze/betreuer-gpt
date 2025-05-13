@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reportStammdaten.json",
+  "title": "Report Stammdaten",
+  "type": "object",
+  "properties": {
+    "stammdaten": {
+      "type": "object",
+      "description": "§ 1863 Abs. 3 Nr. 1 BGB – Basisdaten der betreuten Person",
+      "required": ["name","geschaeftszeichen"],
+      "properties": {
+        "name":             { "type":"string" },
+        "geburtsdatum":     { "type":"string","format":"date" },
+        "geschaeftszeichen":{ "type":"string" },
+        "betreuer_in":      { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["stammdaten"],
+  "additionalProperties": false
+}

@@ -1,0 +1,22 @@
+// schemas/modules/dateRange.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/dateRange.json",
+  "title": "Date Range",
+  "description": "Ein Zeitraum mit Start- und Enddatum",
+  "type": "object",
+  "properties": {
+    "from": {
+      "type": "string",
+      "format": "date",
+      "description": "Beginn des Zeitraums (ISO 8601)"
+    },
+    "to": {
+      "type": "string",
+      "format": "date",
+      "description": "Ende des Zeitraums (ISO 8601)"
+    }
+  },
+  "required": ["from", "to"],
+  "additionalProperties": false
+}

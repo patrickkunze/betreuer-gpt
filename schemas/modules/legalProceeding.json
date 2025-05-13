@@ -1,0 +1,15 @@
+// schemas/modules/legalProceeding.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalProceeding.json",
+  "title":"Legal Proceeding",
+  "type":"object",
+  "properties":{
+    "caseNumber":{"type":"string"},
+    "court":{"type":"string"},
+    "dates":{"type":"array","items":{"type":"string","format":"date"}},
+    "documentsFiled":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["caseNumber","court"],
+  "additionalProperties": false
+}

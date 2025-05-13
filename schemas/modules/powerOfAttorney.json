@@ -1,0 +1,15 @@
+// schemas/modules/powerOfAttorney.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/powerOfAttorney.json",
+  "title":"Power of Attorney",
+  "type":"object",
+  "properties":{
+    "type":{"type":"string"},
+    "holder":{"$ref":"person.json"},
+    "validFrom":{"type":"string","format":"date"},
+    "validUntil":{"type":"string","format":"date"}
+  },
+  "required":["type","holder","validFrom"],
+  "additionalProperties": false
+}

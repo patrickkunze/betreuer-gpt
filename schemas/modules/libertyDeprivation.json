@@ -1,0 +1,15 @@
+// modules/libertyDeprivation.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": ".../libertyDeprivation.json",
+  "title": "Freiheitsentzug",
+  "type": "object",
+  "properties": {
+    "erforderlichkeit":     { "type":"string" },
+    "gepruefte_alternativen":{ "type":"string" },
+    "ruecksprachen":        { "type":"string" },
+    "erfolgsbewertung":     { "type":"string" },
+    "schlussfolgerungen":   { "type":"string" }
+  },
+  "additionalProperties": false
+}

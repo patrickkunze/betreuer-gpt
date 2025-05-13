@@ -1,0 +1,15 @@
+// schemas/modules/budgetItem.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/budgetItem.json",
+  "title": "Budget Item",
+  "type": "object",
+  "properties": {
+    "planned": { "type": "number" },
+    "actual": { "type": "number" },
+    "status": { "type": "string", "enum": ["pending","approved","spent"] },
+    "approval": { "type": "string" }
+  },
+  "required": ["planned"],
+  "additionalProperties": false
+}

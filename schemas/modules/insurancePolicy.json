@@ -1,0 +1,15 @@
+// schemas/modules/insurancePolicy.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/insurancePolicy.json",
+  "title": "Insurance Policy",
+  "type": "object",
+  "properties": {
+    "policyNumber": { "type": "string" },
+    "insurer": { "type": "string" },
+    "coveragePeriod": { "$ref": "dateRange.json" },
+    "coverageDetails": { "type": "string" }
+  },
+  "required": ["policyNumber","insurer","coveragePeriod"],
+  "additionalProperties": false
+}

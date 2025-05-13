@@ -1,0 +1,15 @@
+// schemas/modules/monitoringLogEntry.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/monitoringLogEntry.json",
+  "title":"Monitoring Log Entry",
+  "type":"object",
+  "properties":{
+    "date":{"type":"string","format":"date"},
+    "service":{"type":"string"},
+    "result":{"type":"string"},
+    "deviation":{"type":"string"}
+  },
+  "required":["date","service","result"],
+  "additionalProperties": false
+}

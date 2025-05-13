@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/lifeSituation.json",
+  "title": "Lebenslage",
+  "type": "object",
+  "properties": {
+    "lebenslage": {
+      "type": "object",
+      "description": "Schilderung der Lebenslage (§ 1821 BGB)",
+      "properties": {
+        "eckdaten":            { "type":"string" },
+        "vorstellungen":       { "type":"string" },
+        "wuensche_ressourcen": { "type":"string" },
+        "alltag_soziales":     { "type":"string" },
+        "befindlichkeit":      { "type":"string" },
+        "auslandsaufenthalte": { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["lebenslage"],
+  "additionalProperties": false
+}

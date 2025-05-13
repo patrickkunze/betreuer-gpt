@@ -1,0 +1,12 @@
+// schemas/supervisions-coachingbericht.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/supervisions-coachingbericht.json",
+  "title": "Supervisions- und Coachingbericht",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/supervisionRecord.json" }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,15 @@
+// modules/supervisionRecord.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/supervisionRecord.json",
+  "title":"Supervisions- und Coachingbericht",
+  "type":"object",
+  "properties":{
+    "date":{"type":"string","format":"date"},
+    "supervisor":{"$ref":"../modules/person.json"},
+    "topics":{"type":"array","items":{"type":"string"}},
+    "actionPoints":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["date","supervisor"],
+  "additionalProperties": false
+}

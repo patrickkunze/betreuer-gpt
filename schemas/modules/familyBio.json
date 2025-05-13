@@ -1,0 +1,17 @@
+// schemas/modules/familyBio.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/familyBio.json",
+  "title": "Family and Biographical Data",
+  "type": "object",
+  "properties": {
+    "birthPlace": { "type": "string" },
+    "maritalStatus": { "type": "string" },
+    "lifeEvents": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["birthPlace"],
+  "additionalProperties": false
+}

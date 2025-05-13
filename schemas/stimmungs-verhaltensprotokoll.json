@@ -1,0 +1,12 @@
+// schemas/stimmungs-verhaltensprotokoll.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/stimmungs-verhaltensprotokoll.json",
+  "title": "Stimmungs- und Verhaltensprotokoll",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/moodBehaviorEntry.json" }
+  ],
+  "additionalProperties": false
+}

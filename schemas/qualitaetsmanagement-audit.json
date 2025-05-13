@@ -1,0 +1,12 @@
+// schemas/qualitaetsmanagement-audit.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/qualitaetsmanagement-audit.json",
+  "title": "Qualitätsmanagement-Audit",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/auditRecord.json" }
+  ],
+  "additionalProperties": false
+}

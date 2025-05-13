@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuerbericht.json",
+  "title": "Betreuerbericht",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/reportMeta.json" },
+    { "$ref": "modules/reportStammdaten.json" },
+    {
+      "type": "object",
+      "properties": {
+        "adresse": {
+          "type": "string",
+          "description": "Aktuelle Wohnanschrift (§ 1863 Abs. 3)"
+        },
+        "berichtszeitraum":    { "$ref": "modules/reportPeriod.json" },
+        "lebenslage":          { "$ref": "modules/lifeSituation.json" },
+        "kontaktgestaltung":   { "$ref": "modules/contactDesign.json" },
+        "aufgabenbereiche":    { "$ref": "modules/reportTaskAreas.json" },
+        "bewertung_ausblick":  { "$ref": "modules/evaluationOutlook.json" }
+      },
+      "required": [
+        "adresse",
+        "berichtszeitraum",
+        "lebenslage",
+        "kontaktgestaltung",
+        "aufgabenbereiche",
+        "bewertung_ausblick"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

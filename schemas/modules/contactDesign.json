@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/contactDesign.json",
+  "title": "Kontaktgestaltung",
+  "type": "object",
+  "properties": {
+    "kontaktgestaltung": {
+      "type": "object",
+      "description": "Punkt 6 – Beteiligung & Kontakte",
+      "properties": {
+        "beteiligung_entscheidungen": { "type":"string" },
+        "ermittlung_wuensche":        { "type":"string" },
+        "entscheidungen_gegen_willen":{ "type":"string" },
+        "kontakt_details":            { "type":"string" },
+        "bericht_besprochen":         { "type":"boolean" },
+        "nicht_besprochen_grund":     { "type":"string" },
+        "kontakte_angehoerige":       { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["kontaktgestaltung"],
+  "additionalProperties": false
+}

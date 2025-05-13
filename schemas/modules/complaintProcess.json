@@ -1,0 +1,15 @@
+// schemas/modules/complaintProcess.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/complaintProcess.json",
+  "title":"Complaint Management Process",
+  "type":"object",
+  "properties":{
+    "submittedAt":{"type":"string","format":"date-time"},
+    "handledBy":{"$ref":"person.json"},
+    "steps":{"type":"array","items":{"type":"string"}},
+    "outcome":{"type":"string"}
+  },
+  "required":["submittedAt","handledBy","steps"],
+  "additionalProperties": false
+}

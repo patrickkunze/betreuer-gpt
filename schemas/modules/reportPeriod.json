@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reportPeriod.json",
+  "title": "Berichtszeitraum",
+  "type": "object",
+  "properties": {
+    "berichtszeitraum": {
+      "$ref": "modules/dateRange.json"
+    }
+  },
+  "required": ["berichtszeitraum"],
+  "additionalProperties": false
+}

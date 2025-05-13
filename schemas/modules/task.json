@@ -1,0 +1,17 @@
+// modules/task.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/task.json",
+  "title": "Aufgabe",
+  "type":"object",
+  "properties":{
+    "title":{"type":"string"},
+    "description":{"type":"string"},
+    "assignedTo":{"$ref":"../modules/person.json"},
+    "dueDate":{"type":"string","format":"date"},
+    "priority":{"type":"string","enum":["low","medium","high"]},
+    "status":{"type":"string","enum":["open","in_progress","done"]}
+  },
+  "required":["title","assignedTo","dueDate","priority"],
+  "additionalProperties": false
+}

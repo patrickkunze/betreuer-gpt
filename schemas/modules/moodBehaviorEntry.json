@@ -1,0 +1,15 @@
+// schemas/modules/moodBehaviorEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/moodBehaviorEntry.json",
+  "title": "Mood and Behavior Entry",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "situation": { "type": "string" },
+    "mood": { "type": "string" },
+    "behavior": { "type": "string" }
+  },
+  "required": ["timestamp","mood"],
+  "additionalProperties": false
+}

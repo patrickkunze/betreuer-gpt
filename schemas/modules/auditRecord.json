@@ -1,0 +1,15 @@
+// schemas/modules/auditRecord.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/auditRecord.json",
+  "title":"Quality Management Audit Record",
+  "type":"object",
+  "properties":{
+    "auditDate":{"type":"string","format":"date"},
+    "criteria":{"type":"array","items":{"type":"string"}},
+    "findings":{"type":"array","items":{"type":"string"}},
+    "correctiveActions":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["auditDate","criteria","findings"],
+  "additionalProperties": false
+}

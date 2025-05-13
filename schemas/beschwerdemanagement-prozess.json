@@ -1,0 +1,12 @@
+// schemas/beschwerdemanagement-prozess.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/beschwerdemanagement-prozess.json",
+  "title": "Beschwerdemanagement-Prozess",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/complaintProcess.json" }
+  ],
+  "additionalProperties": false
+}

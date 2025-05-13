@@ -1,0 +1,14 @@
+// schemas/modules/annualCourtReport.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/annualCourtReport.json",
+  "title":"Annual Court Report",
+  "type":"object",
+  "properties":{
+    "year":{"type":"integer"},
+    "content":{"type":"string"},
+    "submittedTo":{"type":"string"}
+  },
+  "required":["year","content","submittedTo"],
+  "additionalProperties": false
+}

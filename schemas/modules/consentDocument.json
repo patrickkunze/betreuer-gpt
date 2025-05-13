@@ -1,0 +1,16 @@
+// modules/consentDocument.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/consentDocument.json",
+  "title":"Einwilligungsdokument",
+  "type":"object",
+  "properties":{
+    "subject":{"type":"string"},
+    "scope":{"type":"string"},
+    "date":{"type":"string","format":"date"},
+    "signature":{"type":"string"},
+    "revocationInfo":{"type":"string"}
+  },
+  "required":["subject","scope","date","signature"],
+  "additionalProperties": false
+}

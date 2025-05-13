@@ -1,0 +1,12 @@
+// schemas/einwilligungserklaerung.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/einwilligungserklaerung.json",
+  "title": "Einwilligungserklärung",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/consentDocument.json" }
+  ],
+  "additionalProperties": false
+}

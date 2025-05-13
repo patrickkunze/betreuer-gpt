@@ -1,0 +1,16 @@
+// schemas/modules/trainingRecord.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/trainingRecord.json",
+  "title":"Training Record",
+  "type":"object",
+  "properties":{
+    "title":{"type":"string"},
+    "date":{"type":"string","format":"date"},
+    "duration":{"type":"string"},
+    "contentSummary":{"type":"string"},
+    "certificateRef":{"type":"string"}
+  },
+  "required":["title","date","duration"],
+  "additionalProperties": false
+}

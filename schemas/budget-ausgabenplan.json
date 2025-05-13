@@ -1,0 +1,22 @@
+// schemas/budget-ausgabenplan.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/budget-ausgabenplan.json",
+  "title": "Budget- und Ausgabenplan",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "budgetItems": {
+          "type": "array",
+          "items": { "$ref": "modules/budgetItem.json" }
+        }
+      },
+      "required": ["budgetItems"],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

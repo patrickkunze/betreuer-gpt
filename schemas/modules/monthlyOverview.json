@@ -1,0 +1,16 @@
+// modules/monthlyOverview.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/monthlyOverview.json",
+  "title": "Monatliche Terminübersicht",
+  "type": "object",
+  "properties": {
+    "period": { "$ref": "../modules/dateRange.json" },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "../modules/calendarEntry.json" }
+    }
+  },
+  "required": ["period","entries"],
+  "additionalProperties": false
+}

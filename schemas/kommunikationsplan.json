@@ -1,0 +1,22 @@
+// schemas/kommunikationsplan.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/kommunikationsplan.json",
+  "title": "Kommunikationsplan",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "planItems": {
+          "type": "array",
+          "items": { "$ref": "modules/communicationPlanItem.json" }
+        }
+      },
+      "required": ["planItems"],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

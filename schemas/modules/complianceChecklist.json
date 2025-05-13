@@ -1,0 +1,13 @@
+// schemas/modules/complianceChecklist.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/complianceChecklist.json",
+  "title":"Compliance Checklist",
+  "type":"object",
+  "properties":{
+    "requirements":{"type":"array","items":{"type":"string"}},
+    "status":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["requirements","status"],
+  "additionalProperties": false
+}

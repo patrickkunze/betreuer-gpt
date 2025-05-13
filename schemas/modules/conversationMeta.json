@@ -1,0 +1,35 @@
+// schemas/modules/conversationMeta.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/conversationMeta.json",
+  "title": "Conversation Meta",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "Formale Metadaten zum Gespräch",
+      "required": ["datum_zeit", "ort", "beteiligte"],
+      "properties": {
+        "datum_zeit": { "type": "string", "format": "date-time" },
+        "ort":        { "type": "string" },
+        "beteiligte": {
+          "type": "object",
+          "required": ["betreuer_in", "betreute_person"],
+          "properties": {
+            "betreuer_in":     { "type": "string" },
+            "betreute_person": { "type": "string" },
+            "dritte": {
+              "type": "array",
+              "description": "Weitere anwesende Personen",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["meta"],
+  "additionalProperties": false
+}

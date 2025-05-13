@@ -1,0 +1,14 @@
+// modules/authorityRegulations.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":".../authorityRegulations.json",
+  "title":"Regelungsbedarfe",
+  "type":"object",
+  "properties":{
+    "was_geregelt":      { "type":"string" },
+    "wer_hat_was":       { "type":"string" },
+    "art_unterstuetzung":{ "type":"string" },
+    "regelungsweg":      { "type":"string" }
+  },
+  "additionalProperties": false
+}

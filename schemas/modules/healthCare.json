@@ -1,0 +1,20 @@
+// modules/healthCare.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/healthCare.json",
+  "title": "Gesundheitssorge",
+  "type": "object",
+  "properties": {
+    "diagnosen":             { "type":"string" },
+    "vorstellungen":         { "type":"string" },
+    "patientenverfuegung":   { "type":"string" },
+    "massnahmen":            { "type":"string" },
+    "medikamente":           { "type":"string" },
+    "behandlungen_vorsorge": { "type":"string" },
+    "pflegemassnahmen":      { "type":"string" },
+    "sicherstellung":        { "type":"string" },
+    "einwilligungen":        { "type":"string" },
+    "zwangsmaßnahmen":       { "type":"string" }
+  },
+  "additionalProperties": false
+}

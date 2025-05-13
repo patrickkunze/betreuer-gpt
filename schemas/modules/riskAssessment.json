@@ -1,0 +1,15 @@
+// schemas/modules/riskAssessment.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/riskAssessment.json",
+  "title": "Risk Assessment",
+  "type": "object",
+  "properties": {
+    "category": { "$ref": "riskCategory.json" },
+    "score": { "type": "number" },
+    "recommendation": { "type": "string" },
+    "date": { "type": "string", "format": "date" }
+  },
+  "required": ["category","score","date"],
+  "additionalProperties": false
+}

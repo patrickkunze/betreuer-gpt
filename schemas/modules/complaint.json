@@ -1,0 +1,15 @@
+// modules/complaint.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/complaint.json",
+  "title":"Beschwerde",
+  "type":"object",
+  "properties":{
+    "submittedBy":{"$ref":"../modules/person.json"},
+    "content":{"type":"string"},
+    "date":{"type":"string","format":"date"},
+    "resolutionStatus":{"type":"string","enum":["open","in_review","resolved"]}
+  },
+  "required":["submittedBy","content","date"],
+  "additionalProperties": false
+}

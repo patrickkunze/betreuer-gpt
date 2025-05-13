@@ -1,0 +1,12 @@
+// schemas/barrierefreie-kommunikationsvereinbarung.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/barrierefreie-kommunikationsvereinbarung.json",
+  "title": "Barrierefreie Kommunikationsvereinbarung",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/communicationAgreement.json" }
+  ],
+  "additionalProperties": false
+}

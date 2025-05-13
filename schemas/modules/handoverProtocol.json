@@ -1,0 +1,17 @@
+// modules/handoverProtocol.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/handoverProtocol.json",
+  "title": "Übergabeprotokoll",
+  "type": "object",
+  "properties": {
+    "date": { "type": "string","format": "date" },
+    "documentsTransferred": {
+      "type": "array","items": { "$ref": "../modules/documentMetadata.json" }
+    },
+    "openPoints": { "type": "string" },
+    "acknowledgement": { "type": "boolean" }
+  },
+  "required": ["date","documentsTransferred","acknowledgement"],
+  "additionalProperties": false
+}

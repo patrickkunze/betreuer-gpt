@@ -1,0 +1,12 @@
+// schemas/antrag-genehmigung-besonderer-massnahmen.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/antrag-genehmigung-besonderer-massnahmen.json",
+  "title": "Antrag auf Genehmigung besonderer Maßnahmen",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/specialMeasuresRequest.json" }
+  ],
+  "additionalProperties": false
+}

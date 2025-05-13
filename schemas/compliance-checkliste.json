@@ -1,0 +1,12 @@
+// schemas/compliance-checkliste.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/compliance-checkliste.json",
+  "title": "Compliance-Checkliste",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/complianceChecklist.json" }
+  ],
+  "additionalProperties": false
+}

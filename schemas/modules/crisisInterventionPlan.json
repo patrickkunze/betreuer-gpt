@@ -1,0 +1,17 @@
+// schemas/modules/crisisInterventionPlan.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/crisisInterventionPlan.json",
+  "title": "Crisis Intervention Plan",
+  "type": "object",
+  "properties": {
+    "trigger": { "type": "string" },
+    "steps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "escalation": { "type": "string" }
+  },
+  "required": ["trigger","steps"],
+  "additionalProperties": false
+}

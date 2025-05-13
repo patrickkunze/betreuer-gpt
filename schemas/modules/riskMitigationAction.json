@@ -1,0 +1,15 @@
+// schemas/modules/riskMitigationAction.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/riskMitigationAction.json",
+  "title": "Risk Mitigation Action",
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "responsible": { "$ref": "person.json" },
+    "deadline": { "type": "string", "format": "date" },
+    "status": { "type": "string", "enum": ["pending","in_progress","done"] }
+  },
+  "required": ["description","responsible","deadline"],
+  "additionalProperties": false
+}

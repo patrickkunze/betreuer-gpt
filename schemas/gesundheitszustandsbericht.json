@@ -1,0 +1,32 @@
+// schemas/gesundheitszustandsbericht.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/gesundheitszustandsbericht.json",
+  "title": "Gesundheitszustandsbericht",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "vitals": {
+          "type": "object",
+          "properties": {
+            "bloodPressure": { "type": "string" },
+            "weight": { "type": "number" },
+            "diagnoses": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["bloodPressure","weight"],
+          "additionalProperties": false
+        },
+        "medicationPlan": { "$ref": "modules/medicationPlan.json" }
+      },
+      "required": ["vitals","medicationPlan"],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,15 @@
+// schemas/modules/privacyConsent.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/privacyConsent.json",
+  "title":"Privacy Consent",
+  "type":"object",
+  "properties":{
+    "purpose":{"type":"string"},
+    "dataTypes":{"type":"array","items":{"type":"string"}},
+    "duration":{"type":"string"},
+    "revocationProcedure":{"type":"string"}
+  },
+  "required":["purpose","dataTypes","duration"],
+  "additionalProperties": false
+}

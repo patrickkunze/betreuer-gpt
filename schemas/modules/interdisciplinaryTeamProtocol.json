@@ -1,0 +1,16 @@
+// schemas/modules/interdisciplinaryTeamProtocol.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/interdisciplinaryTeamProtocol.json",
+  "title":"Interdisciplinary Team Protocol",
+  "type":"object",
+  "properties":{
+    "date":{"type":"string","format":"date"},
+    "participants":{"type":"array","items":{"$ref":"person.json"}},
+    "agendaItems":{"type":"array","items":{"type":"string"}},
+    "decisions":{"type":"array","items":{"type":"string"}},
+    "tasks":{"type":"array","items":{"$ref":"task.json"}}
+  },
+  "required":["date","participants"],
+  "additionalProperties": false
+}

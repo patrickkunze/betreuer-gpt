@@ -1,0 +1,14 @@
+// schemas/modules/specialMeasuresRequest.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/specialMeasuresRequest.json",
+  "title":"Special Measures Request",
+  "type":"object",
+  "properties":{
+    "measure":{"type":"string"},
+    "justification":{"type":"string"},
+    "requestedOn":{"type":"string","format":"date"}
+  },
+  "required":["measure","justification","requestedOn"],
+  "additionalProperties": false
+}

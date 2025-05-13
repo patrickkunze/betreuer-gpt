@@ -1,0 +1,21 @@
+// schemas/modules/statusReport.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/statusReport.json",
+  "title": "Status Report",
+  "type": "object",
+  "properties": {
+    "period": { "$ref": "dateRange.json" },
+    "activities": {
+      "type": "array","items":{"type":"string"}
+    },
+    "issues": {
+      "type":"array","items":{"type":"string"}
+    },
+    "nextSteps": {
+      "type":"array","items":{"type":"string"}
+    }
+  },
+  "required":["period","activities"],
+  "additionalProperties": false
+}

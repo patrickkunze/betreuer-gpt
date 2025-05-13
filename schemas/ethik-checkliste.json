@@ -1,0 +1,12 @@
+// schemas/ethik-checkliste.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/ethik-checkliste.json",
+  "title": "Ethik-Checkliste",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/ethicalCriterion.json" }
+  ],
+  "additionalProperties": false
+}

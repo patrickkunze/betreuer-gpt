@@ -1,0 +1,12 @@
+// schemas/ressourcen-anfrageformular.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/ressourcen-anfrageformular.json",
+  "title": "Ressourcen-Anfrageformular",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/resourceRequest.json" }
+  ],
+  "additionalProperties": false
+}

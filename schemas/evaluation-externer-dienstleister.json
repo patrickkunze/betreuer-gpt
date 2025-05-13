@@ -1,0 +1,12 @@
+// schemas/evaluation-externer-dienstleister.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/evaluation-externer-dienstleister.json",
+  "title": "Evaluation externer Dienstleister",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/serviceEvaluation.json" }
+  ],
+  "additionalProperties": false
+}

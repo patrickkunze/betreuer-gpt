@@ -1,0 +1,15 @@
+// schemas/modules/ethicalCriterion.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/ethicalCriterion.json",
+  "title": "Ethical Criterion",
+  "type": "object",
+  "properties": {
+    "topic": { "type": "string" },
+    "considerations": { "type": "string" },
+    "recommendation": { "type": "string" },
+    "responsible": { "$ref": "person.json" }
+  },
+  "required": ["topic","considerations"],
+  "additionalProperties": false
+}

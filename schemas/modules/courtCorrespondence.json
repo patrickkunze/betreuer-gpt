@@ -1,0 +1,15 @@
+// schemas/modules/courtCorrespondence.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/courtCorrespondence.json",
+  "title":"Court Correspondence",
+  "type":"object",
+  "properties":{
+    "date":{"type":"string","format":"date"},
+    "recipient":{"type":"string"},
+    "subject":{"type":"string"},
+    "body":{"type":"string"}
+  },
+  "required":["date","recipient","subject"],
+  "additionalProperties": false
+}

@@ -1,0 +1,22 @@
+// schemas/angehoerigenbefragung.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/angehoerigenbefragung.json",
+  "title": "Angehörigenbefragung",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    {
+      "type": "object",
+      "properties": {
+        "responses": {
+          "type": "array",
+          "items": { "$ref": "modules/surveyResponse.json" }
+        }
+      },
+      "required": ["responses"],
+      "additionalProperties": false
+    }
+  ],
+  "additionalProperties": false
+}

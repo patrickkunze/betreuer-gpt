@@ -1,0 +1,15 @@
+// schemas/modules/communicationAgreement.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/communicationAgreement.json",
+  "title": "Accessible Communication Agreement",
+  "type": "object",
+  "properties": {
+    "medium": { "type": "string" },
+    "duration": { "type": "string" },
+    "responsible": { "$ref": "person.json" },
+    "evaluationDate": { "type": "string", "format": "date" }
+  },
+  "required": ["medium","duration","responsible"],
+  "additionalProperties": false
+}

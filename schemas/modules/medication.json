@@ -1,0 +1,15 @@
+// schemas/modules/medication.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/medication.json",
+  "title": "Medication",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "dosage": { "type": "string" },
+    "frequency": { "type": "string" },
+    "instructions": { "type": "string" }
+  },
+  "required": ["name","dosage","frequency"],
+  "additionalProperties": false
+}

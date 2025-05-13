@@ -1,0 +1,24 @@
+// schemas/modules/resourcesOverview.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/resourcesOverview.json",
+  "title": "Resources Overview",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "resource": { "type": "string" },
+          "quantity": { "type": "integer" },
+          "location": { "type": "string" },
+          "status": { "type": "string" }
+        },
+        "required": ["resource","quantity"]
+      }
+    }
+  },
+  "required": ["items"],
+  "additionalProperties": false
+}

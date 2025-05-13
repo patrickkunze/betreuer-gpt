@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reportTaskAreas.json",
+  "title": "Aufgabenbereiche",
+  "type": "object",
+  "properties": {
+    "aufgabenbereiche": {
+      "type": "object",
+      "required": ["a","b","c","d","e","f","g","h"],
+      "properties": {
+        "a": { "$ref": "modules/healthCare.json" },
+        "b": { "$ref": "modules/libertyDeprivation.json" },
+        "c": { "$ref": "modules/residenceDetermination.json" },
+        "d": { "$ref": "modules/supportProvision.json" },
+        "e": { "$ref": "modules/authorityRegulations.json" },
+        "f": { "$ref": "modules/assetCare.json" },
+        "g": { "$ref": "modules/otherTasks.json" },
+        "h": { "$ref": "modules/externalActivities.json" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["aufgabenbereiche"],
+  "additionalProperties": false
+}

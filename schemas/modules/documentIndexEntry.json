@@ -1,0 +1,15 @@
+// modules/documentIndexEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/documentIndexEntry.json",
+  "title": "Dokumentenarchiv-Index-Eintrag",
+  "type": "object",
+  "properties": {
+    "fileName": { "type": "string" },
+    "type": { "type": "string" },
+    "version": { "type": "string" },
+    "uploadedAt": { "type": "string","format":"date-time" }
+  },
+  "required": ["fileName","type","uploadedAt"],
+  "additionalProperties": false
+}

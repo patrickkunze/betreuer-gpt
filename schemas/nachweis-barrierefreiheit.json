@@ -1,0 +1,12 @@
+// schemas/nachweis-barrierefreiheit.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/nachweis-barrierefreiheit.json",
+  "title": "Nachweis Barrierefreiheit digitaler Dokumente",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/accessibilityAssessment.json" }
+  ],
+  "additionalProperties": false
+}

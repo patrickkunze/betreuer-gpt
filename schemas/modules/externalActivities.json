@@ -1,0 +1,7 @@
+// modules/externalActivities.json
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":".../externalActivities.json",
+  "title":"Tätigkeiten außerhalb",
+  "type":"string"
+}

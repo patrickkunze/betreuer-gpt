@@ -1,0 +1,22 @@
+// modules/calendarEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/calendarEntry.json",
+  "title": "Calendar Entry",
+  "type": "object",
+  "properties": {
+    "timeSlot": { "$ref": "../modules/timeSlot.json" },
+    "location": { "type": "string" },
+    "participants": {
+      "type": "array",
+      "items": { "$ref": "../modules/person.json" },
+      "minItems": 1
+    },
+    "reminders": {
+      "type": "array",
+      "items": { "type": "string", "format": "date-time" }
+    }
+  },
+  "required": ["timeSlot","participants"],
+  "additionalProperties": false
+}

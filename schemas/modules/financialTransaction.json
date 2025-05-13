@@ -1,0 +1,15 @@
+// schemas/modules/financialTransaction.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/financialTransaction.json",
+  "title": "Financial Transaction",
+  "type": "object",
+  "properties": {
+    "date": { "type": "string", "format": "date" },
+    "amount": { "type": "number" },
+    "category": { "type": "string" },
+    "receiptRef": { "type": "string" }
+  },
+  "required": ["date","amount","category"],
+  "additionalProperties": false
+}

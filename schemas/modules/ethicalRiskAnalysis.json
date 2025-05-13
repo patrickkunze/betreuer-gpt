@@ -1,0 +1,18 @@
+// schemas/modules/ethicalRiskAnalysis.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/ethicalRiskAnalysis.json",
+  "title": "Ethical Risk Analysis",
+  "type": "object",
+  "properties": {
+    "risk": { "type": "string" },
+    "impact": { "type": "string" },
+    "affectedPersons": {
+      "type": "array",
+      "items": { "$ref": "person.json" }
+    },
+    "mitigation": { "type": "string" }
+  },
+  "required": ["risk","impact"],
+  "additionalProperties": false
+}
