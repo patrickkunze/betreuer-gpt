@@ -1,0 +1,14 @@
+// schemas/modules/timelineEvent.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/timelineEvent.json",
+  "title": "Zeitlicher Ablauf-Eintrag",
+  "type": "object",
+  "properties": {
+    "Datum":   { "type": "string", "format": "date" },
+    "Uhrzeit": { "type": "string", "pattern": "^([01]\\d|2[0-3]):([0-5]\\d)$" },
+    "Ereignis":{ "type": "string" }
+  },
+  "required": ["Datum","Uhrzeit","Ereignis"],
+  "additionalProperties": false
+}

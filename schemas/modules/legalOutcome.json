@@ -1,0 +1,44 @@
+// schemas/modules/legalOutcome.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalOutcome.json",
+  "title": "ErgebnisRechtsfolge",
+  "type": "object",
+  "properties": {
+    "ErgebnisRechtsfolge": {
+      "type": "object",
+      "properties": {
+        "Haftung": {
+          "type": "object",
+          "properties": {
+            "Wer":     { "type": "string" },
+            "Umfang":  { "type": "string" }
+          },
+          "required": ["Wer","Umfang"],
+          "additionalProperties": false
+        },
+        "AnspruecheRechtsbehelfe": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Inhalt": { "type": "string" },
+              "Fristen":{ "type": "string" },
+              "Form":   { "type": "string" }
+            },
+            "required": ["Inhalt","Fristen","Form"],
+            "additionalProperties": false
+          }
+        },
+        "Empfehlungen": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["Haftung","AnspruecheRechtsbehelfe"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["ErgebnisRechtsfolge"],
+  "additionalProperties": false
+}

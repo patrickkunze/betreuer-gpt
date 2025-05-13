@@ -1,0 +1,14 @@
+// schemas/modules/party.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/party.json",
+  "title": "Partei",
+  "type": "object",
+  "properties": {
+    "Name": { "type": "string" },
+    "FunktionRolle": { "type": "string" },
+    "Verhaeltnis": { "type": "string" }
+  },
+  "required": ["Name","FunktionRolle","Verhaeltnis"],
+  "additionalProperties": false
+}

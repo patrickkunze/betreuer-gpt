@@ -1,0 +1,63 @@
+// schemas/modules/subsumption.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/subsumption.json",
+  "title": "Subsumtion",
+  "type": "object",
+  "properties": {
+    "Subsumtion": {
+      "type": "object",
+      "properties": {
+        "ObjektiverTatbestand": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Merkmal":  { "type": "string" },
+              "Pruefung": { "type": "string" }
+            },
+            "required": ["Merkmal","Pruefung"],
+            "additionalProperties": false
+          }
+        },
+        "SubjektiverTatbestand": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Aspekt":   { "type": "string" },
+              "Pruefung": { "type": "string" }
+            },
+            "required": ["Aspekt","Pruefung"],
+            "additionalProperties": false
+          }
+        },
+        "Rechtfertigungsgruende": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Grund":   { "type": "string" },
+              "Abgleich":{ "type": "string" }
+            },
+            "required": ["Grund","Abgleich"],
+            "additionalProperties": false
+          }
+        },
+        "Ergebnis": {
+          "type": "object",
+          "properties": {
+            "VollstaendigeErfuellung": { "type": "boolean" },
+            "OffeneFragen":            { "type": "array", "items": { "type": "string" } }
+          },
+          "required": ["VollstaendigeErfuellung"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["ObjektiverTatbestand","SubjektiverTatbestand","Ergebnis"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["Subsumtion"],
+  "additionalProperties": false
+}

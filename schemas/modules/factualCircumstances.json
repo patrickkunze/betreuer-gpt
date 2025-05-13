@@ -1,0 +1,29 @@
+// schemas/modules/factualCircumstances.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/factualCircumstances.json",
+  "title": "Sachverhalt",
+  "type": "object",
+  "properties": {
+    "Sachverhalt": {
+      "type": "object",
+      "properties": {
+        "Kurzbeschreibung":    { "type": "string" },
+        "Parteien": {
+          "type": "array",
+          "items": { "$ref": "party.json" }
+        },
+        "ZeitlicherAblauf": {
+          "type": "array",
+          "items": { "$ref": "timelineEvent.json" }
+        },
+        "RaeumlicherKontext":    { "type": "string" },
+        "RelevanteUmstaende":    { "type": "string" }
+      },
+      "required": ["Kurzbeschreibung","Parteien","ZeitlicherAblauf"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["Sachverhalt"],
+  "additionalProperties": false
+}

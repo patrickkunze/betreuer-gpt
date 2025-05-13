@@ -1,0 +1,57 @@
+// schemas/modules/legalBasis.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalBasis.json",
+  "title": "Rechtsgrundlagen",
+  "type": "object",
+  "properties": {
+    "Rechtsgrundlagen": {
+      "type": "object",
+      "properties": {
+        "AnwendbareNormen": {
+          "type": "array",
+          "items": { "$ref": "applicableNorm.json" }
+        },
+        "Schutzzweck": { "type": "string" },
+        "Voraussetzungen": {
+          "type": "object",
+          "properties": {
+            "ObjektiverTatbestand": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Merkmal": { "type": "string" }
+                },
+                "required": ["Merkmal"],
+                "additionalProperties": false
+              }
+            },
+            "SubjektiverTatbestand": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Aspekt": { "type": "string" }
+                },
+                "required": ["Aspekt"],
+                "additionalProperties": false
+              }
+            },
+            "Rechtfertigungsgruende": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "Rechtsfolgen": { "type": "string" }
+          },
+          "required": ["ObjektiverTatbestand","SubjektiverTatbestand"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["AnwendbareNormen"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["Rechtsgrundlagen"],
+  "additionalProperties": false
+}

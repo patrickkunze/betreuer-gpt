@@ -1,0 +1,21 @@
+// schemas/rechtliche-einschaetzung.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/rechtliche-einschaetzung.json",
+  "title": "Rechtliche Einschätzung",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/factualCircumstances.json" },
+    { "$ref": "modules/legalBasis.json" },
+    { "$ref": "modules/subsumption.json" },
+    { "$ref": "modules/legalOutcome.json" }
+  ],
+  "required": [
+    "Sachverhalt",
+    "Rechtsgrundlagen",
+    "Subsumtion",
+    "ErgebnisRechtsfolge"
+  ],
+  "additionalProperties": false
+}
