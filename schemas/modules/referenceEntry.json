@@ -1,0 +1,14 @@
+// schemas/modules/referenceEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/referenceEntry.json",
+  "title": "Reference Entry",
+  "type": "object",
+  "properties": {
+    "datum":   { "type":"string","format":"date" },
+    "betreff": { "type":"string" },
+    "quelle":  { "type":"string" }
+  },
+  "required": ["datum","betreff","quelle"],
+  "additionalProperties": false
+}

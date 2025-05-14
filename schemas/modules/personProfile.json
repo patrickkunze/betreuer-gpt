@@ -1,0 +1,23 @@
+// schemas/modules/personProfile.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/personProfile.json",
+  "title": "Person Profile",
+  "type": "object",
+  "properties": {
+    "vorstellungBetreutePerson": {
+      "type": "object",
+      "description": "Daten und Kurzbiografie der betreuten Person",
+      "required": ["name","alter","familienstand","lebenssituation"],
+      "properties": {
+        "name":            { "type":"string" },
+        "alter":           { "type":"integer" },
+        "familienstand":   { "type":"string" },
+        "lebenssituation": { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["vorstellungBetreutePerson"],
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/standardanschreiben.json",
+  "title": "Standardanschreiben",
+  "type": "object",
+  "allOf": [
+    { "$ref": "baseDocument.json" },
+    { "$ref": "modules/letterHeader.json" },
+    { "$ref": "modules/letterBody.json" },
+    { "$ref": "modules/legalFoundation.json" },
+    { "$ref": "modules/bezugnahmen.json" },
+    { "$ref": "modules/personProfile.json" },
+    { "$ref": "modules/personalSituation.json" },
+    { "$ref": "modules/actionTimeline.json" },
+    { "$ref": "modules/followUp.json" },
+    { "$ref": "modules/attachments.json" }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+// schemas/modules/actionTimelineEntry.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/actionTimelineEntry.json",
+  "title": "Action Timeline Entry",
+  "type": "object",
+  "properties": {
+    "frist":         { "type":"string","format":"date" },
+    "meilenstein":   { "type":"string" },
+    "verantwortlich":{ "type":"string" }
+  },
+  "required": ["frist","meilenstein","verantwortlich"],
+  "additionalProperties": false
+}

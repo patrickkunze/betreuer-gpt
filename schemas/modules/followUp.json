@@ -1,0 +1,21 @@
+// schemas/modules/followUp.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/followUp.json",
+  "title": "Follow Up",
+  "type": "object",
+  "properties": {
+    "nachverfolgung": {
+      "type": "object",
+      "description": "Rückmelde-Datum oder -Bedingung und nächste Schritte",
+      "required": ["rueckmeldeDatum","naechsteSchritte"],
+      "properties": {
+        "rueckmeldeDatum": { "type":"string","format":"date" },
+        "naechsteSchritte": { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["nachverfolgung"],
+  "additionalProperties": false
+}

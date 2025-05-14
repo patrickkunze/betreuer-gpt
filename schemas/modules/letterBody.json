@@ -1,0 +1,30 @@
+// schemas/modules/letterBody.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/letterBody.json",
+  "title": "Letter Body Sections",
+  "type": "object",
+  "properties": {
+    "betreff":                    { "type":"string" },
+    "anrede":                     { "type":"string" },
+    "einleitung":                 { "type":"string" },
+    "klartextZusammenfassung":    { "type":"string" },
+    "anlassbezogeneSachverhaltsdarstellung": { "type":"string" },
+    "risikoFolgenbewertung":      { "type":"string" },
+    "empfehlungGeplantesVorgehen":{ "type":"string" },
+    "erwarteteMitwirkung":        { "type":"string" },
+    "hinweisUnterstuetzung":       { "type":"string" },
+    "abschlussformel":            { "type":"string" }
+  },
+  "required": [
+    "betreff","anrede","einleitung",
+    "klartextZusammenfassung",
+    "anlassbezogeneSachverhaltsdarstellung",
+    "risikoFolgenbewertung",
+    "empfehlungGeplantesVorgehen",
+    "erwarteteMitwirkung",
+    "hinweisUnterstuetzung",
+    "abschlussformel"
+  ],
+  "additionalProperties": false
+}

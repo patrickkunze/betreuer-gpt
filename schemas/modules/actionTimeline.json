@@ -1,0 +1,15 @@
+// schemas/modules/actionTimeline.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/actionTimeline.json",
+  "title": "Action Timeline",
+  "type": "object",
+  "properties": {
+    "handlungsTerminplan": {
+      "type": "array",
+      "items": { "$ref": "actionTimelineEntry.json" }
+    }
+  },
+  "required": ["handlungsTerminplan"],
+  "additionalProperties": false
+}

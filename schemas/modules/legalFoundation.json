@@ -1,0 +1,23 @@
+// schemas/modules/legalFoundation.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalFoundation.json",
+  "title": "Legal Foundation",
+  "type": "object",
+  "properties": {
+    "rechtlicheGrundlage": {
+      "type": "object",
+      "description": "Verweis auf Bestellungsurkunde und Umfang der Befugnisse",
+      "required": ["urkundenDatum","gericht","aktenzeichen","befugnisse"],
+      "properties": {
+        "urkundenDatum": { "type":"string","format":"date" },
+        "gericht":       { "type":"string" },
+        "aktenzeichen":  { "type":"string" },
+        "befugnisse":    { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["rechtlicheGrundlage"],
+  "additionalProperties": false
+}

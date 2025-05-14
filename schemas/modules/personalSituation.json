@@ -1,0 +1,22 @@
+// schemas/modules/personalSituation.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/personalSituation.json",
+  "title": "Personal Situation",
+  "type": "object",
+  "properties": {
+    "persoenlicheSituation": {
+      "type": "object",
+      "description": "Gesundheit, soziale Lage, Wünsche und Werte",
+      "required": ["gesundheitszustand","sozialeLebenslage","wuensche"],
+      "properties": {
+        "gesundheitszustand":  { "type":"string" },
+        "sozialeLebenslage":   { "type":"string" },
+        "wuensche":            { "type":"string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["persoenlicheSituation"],
+  "additionalProperties": false
+}

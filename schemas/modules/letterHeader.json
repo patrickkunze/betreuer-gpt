@@ -1,0 +1,26 @@
+// schemas/modules/letterHeader.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/letterHeader.json",
+  "title": "Letter Header",
+  "type": "object",
+  "properties": {
+    "kopfzeile": {
+      "type": "object",
+      "description": "Angaben zu Betreuungsverein, Kontaktdaten, Datum und Aktenzeichen",
+      "required": ["verein","ansprechpartner","adresse","telefon","email","datum","aktenzeichen"],
+      "properties": {
+        "verein":        { "type": "string" },
+        "ansprechpartner": { "type": "string" },
+        "adresse":       { "type": "string" },
+        "telefon":       { "type": "string" },
+        "email":         { "type": "string","format":"email" },
+        "datum":         { "type": "string","format":"date" },
+        "aktenzeichen":  { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["kopfzeile"],
+  "additionalProperties": false
+}
