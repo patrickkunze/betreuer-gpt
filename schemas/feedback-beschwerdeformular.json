@@ -1,7 +1,7 @@
 // schemas/feedback-beschwerdeformular.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/feedback-beschwerdeformular.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/feedback-beschwerdeformular.json",
   "title": "Feedback- und Beschwerdeformular",
   "type": "object",
   "allOf": [

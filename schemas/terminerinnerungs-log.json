@@ -1,7 +1,7 @@
 // schemas/terminerinnerungs-log.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/terminerinnerungs-log.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/terminerinnerungs-log.json",
   "title": "Terminerinnerungs-Log",
   "type": "object",
   "allOf": [

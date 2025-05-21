@@ -1,7 +1,7 @@
 // modules/libertyDeprivation.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": ".../libertyDeprivation.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/libertyDeprivation.json",
   "title": "Freiheitsentzug",
   "type": "object",
   "properties": {

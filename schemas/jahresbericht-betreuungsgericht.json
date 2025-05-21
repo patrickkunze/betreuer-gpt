@@ -1,7 +1,7 @@
 // schemas/jahresbericht-betreuungsgericht.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/jahresbericht-betreuungsgericht.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/jahresbericht-betreuungsgericht.json",
   "title": "Jahresbericht an das Betreuungsgericht",
   "type": "object",
   "allOf": [

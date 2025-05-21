@@ -1,7 +1,7 @@
 // schemas/schulungs-weiterbildungsplan.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/schulungs-weiterbildungsplan.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/schulungs-weiterbildungsplan.json",
   "title": "Schulungs- und Weiterbildungsplan",
   "type": "object",
   "allOf": [

@@ -1,7 +1,7 @@
 // schemas/modules/bezugnahmen.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/bezugnahmen.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/bezugnahmen.json",
   "title": "Bezugnahmen",
   "type": "object",
   "properties": {

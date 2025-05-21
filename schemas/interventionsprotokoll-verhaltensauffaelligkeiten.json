@@ -1,7 +1,7 @@
 // schemas/interventionsprotokoll-verhaltensauffaelligkeiten.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/interventionsprotokoll-verhaltensauffaelligkeiten.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/interventionsprotokoll-verhaltensauffaelligkeiten.json",
   "title": "Interventionsprotokoll für Verhaltensauffälligkeiten",
   "type": "object",
   "allOf": [

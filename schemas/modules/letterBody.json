@@ -1,7 +1,7 @@
 // schemas/modules/letterBody.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/letterBody.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/letterBody.json",
   "title": "Letter Body Sections",
   "type": "object",
   "properties": {

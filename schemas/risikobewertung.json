@@ -1,7 +1,7 @@
 // schemas/risikobewertung.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/risikobewertung.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/risikobewertung.json",
   "title": "Risikobewertung",
   "type": "object",
   "allOf": [

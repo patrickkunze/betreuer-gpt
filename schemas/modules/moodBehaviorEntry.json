@@ -1,7 +1,7 @@
 // schemas/modules/moodBehaviorEntry.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/moodBehaviorEntry.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/moodBehaviorEntry.json",
   "title": "Mood and Behavior Entry",
   "type": "object",
   "properties": {

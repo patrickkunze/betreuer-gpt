@@ -1,7 +1,7 @@
 // modules/supportProvision.json
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":".../supportProvision.json",
+  "$id":"https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/supportProvision.json",
   "title":"Unterstützung & Versorgung",
   "type":"object",
   "properties":{

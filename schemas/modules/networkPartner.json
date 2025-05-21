@@ -1,7 +1,7 @@
 // schemas/modules/networkPartner.json
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":"https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/networkPartner.json",
+  "$id":"https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/networkPartner.json",
   "title":"Network Partner",
   "type":"object",
   "properties":{

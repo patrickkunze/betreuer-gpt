@@ -1,7 +1,7 @@
 // modules/notificationLogEntry.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/notificationLogEntry.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/notificationLogEntry.json",
   "title": "Terminerinnerungs-Log",
   "type": "object",
   "properties": {

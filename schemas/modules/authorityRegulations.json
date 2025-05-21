@@ -1,7 +1,7 @@
 // modules/authorityRegulations.json
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":".../authorityRegulations.json",
+  "$id":"https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/authorityRegulations.json",
   "title":"Regelungsbedarfe",
   "type":"object",
   "properties":{

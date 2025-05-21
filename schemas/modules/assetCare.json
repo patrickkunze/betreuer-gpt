@@ -1,7 +1,7 @@
 // modules/assetCare.json
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":".../assetCare.json",
+  "$id":"https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/assetCare.json",
   "title":"Vermögenssorge",
   "type":"object",
   "properties":{

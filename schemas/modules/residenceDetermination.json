@@ -1,7 +1,7 @@
 // modules/residenceDetermination.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": ".../residenceDetermination.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/residenceDetermination.json",
   "title": "Aufenthaltsbestimmung",
   "type": "object",
   "properties": {

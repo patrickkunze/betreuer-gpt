@@ -1,7 +1,7 @@
 // schemas/modules/invoice.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/invoice.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/invoice.json",
   "title": "Invoice",
   "type": "object",
   "properties": {

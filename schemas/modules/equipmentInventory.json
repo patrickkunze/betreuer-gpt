@@ -1,7 +1,7 @@
 // schemas/modules/equipmentInventory.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/equipmentInventory.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/equipmentInventory.json",
   "title": "Equipment Inventory",
   "type": "object",
   "properties": {

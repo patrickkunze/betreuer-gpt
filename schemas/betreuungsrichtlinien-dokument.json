@@ -1,7 +1,7 @@
 // schemas/betreuungsrichtlinien-dokument.json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuungsrichtlinien-dokument.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/betreuungsrichtlinien-dokument.json",
   "title": "Betreuungsrichtlinien-Dokument",
   "type": "object",
   "allOf": [

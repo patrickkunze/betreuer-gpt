@@ -2,691 +2,691 @@
   "schemas": [
     {
       "name": "korrespondenz-betreuungsgericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/korrespondenz-betreuungsgericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/korrespondenz-betreuungsgericht.json"
     },
     {
       "name": "nachweis-barrierefreiheit",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/nachweis-barrierefreiheit.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/nachweis-barrierefreiheit.json"
     },
     {
       "name": "übergabeprotokoll",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/übergabeprotokoll.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/übergabeprotokoll.json"
     },
     {
       "name": "budgetfreigabeformular",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/budgetfreigabeformular.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/budgetfreigabeformular.json"
     },
     {
       "name": "ressourcen-anfrageformular",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/ressourcen-anfrageformular.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/ressourcen-anfrageformular.json"
     },
     {
       "name": "angehoerigenzustimmung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/angehoerigenzustimmung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/angehoerigenzustimmung.json"
     },
     {
       "name": "vollmachts-verfuegungsdokumente",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/vollmachts-verfuegungsdokumente.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/vollmachts-verfuegungsdokumente.json"
     },
     {
       "name": "dokumentationsrichtlinie",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/dokumentationsrichtlinie.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/dokumentationsrichtlinie.json"
     },
     {
       "name": "baseDocument",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/baseDocument.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/baseDocument.json"
     },
     {
       "name": "interdisziplinäres-team-protokoll",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/interdisziplinäres-team-protokoll.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/interdisziplinäres-team-protokoll.json"
     },
     {
       "name": "einkaufs-versorgungsplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/einkaufs-versorgungsplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/einkaufs-versorgungsplan.json"
     },
     {
       "name": "risikominderungsplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/risikominderungsplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/risikominderungsplan.json"
     },
     {
       "name": "ethik-checkliste",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/ethik-checkliste.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/ethik-checkliste.json"
     },
     {
       "name": "ethische-risikoanalyse",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/ethische-risikoanalyse.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/ethische-risikoanalyse.json"
     },
     {
       "name": "stimmungs-verhaltensprotokoll",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/stimmungs-verhaltensprotokoll.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/stimmungs-verhaltensprotokoll.json"
     },
     {
       "name": "fallabschlussbericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/fallabschlussbericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/fallabschlussbericht.json"
     },
     {
       "name": "einwilligungserklaerung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/einwilligungserklaerung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/einwilligungserklaerung.json"
     },
     {
       "name": "kommunikationsplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/kommunikationsplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/kommunikationsplan.json"
     },
     {
       "name": "gesundheitszustandsbericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/gesundheitszustandsbericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/gesundheitszustandsbericht.json"
     },
     {
       "name": "standardanschreiben",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/standardanschreiben.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/standardanschreiben.json"
     },
     {
       "name": "rechtliche-einschaetzung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/rechtliche-einschaetzung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/rechtliche-einschaetzung.json"
     },
     {
       "name": "terminerinnerungs-log",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/terminerinnerungs-log.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/terminerinnerungs-log.json"
     },
     {
       "name": "schulungs-weiterbildungsplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/schulungs-weiterbildungsplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/schulungs-weiterbildungsplan.json"
     },
     {
       "name": "stakeholder-analyse",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/stakeholder-analyse.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/stakeholder-analyse.json"
     },
     {
       "name": "evaluation-externer-dienstleister",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/evaluation-externer-dienstleister.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/evaluation-externer-dienstleister.json"
     },
     {
       "name": "gerichtliche-dokumente",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/gerichtliche-dokumente.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/gerichtliche-dokumente.json"
     },
     {
       "name": "fortbildungsnachweis",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/fortbildungsnachweis.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/fortbildungsnachweis.json"
     },
     {
       "name": "datenschutz-vertraulichkeitserklaerung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/datenschutz-vertraulichkeitserklaerung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/datenschutz-vertraulichkeitserklaerung.json"
     },
     {
       "name": "barrierefreiheits-assessment",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/barrierefreiheits-assessment.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/barrierefreiheits-assessment.json"
     },
     {
       "name": "budget-ausgabenplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/budget-ausgabenplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/budget-ausgabenplan.json"
     },
     {
       "name": "woechentlicher-statusbericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/woechentlicher-statusbericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/woechentlicher-statusbericht.json"
     },
     {
       "name": "leistungsnachweis",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/leistungsnachweis.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/leistungsnachweis.json"
     },
     {
       "name": "risikobewertung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/risikobewertung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/risikobewertung.json"
     },
     {
       "name": "compliance-checkliste",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/compliance-checkliste.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/compliance-checkliste.json"
     },
     {
       "name": "rechnungs-kostenuebersicht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/rechnungs-kostenuebersicht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/rechnungs-kostenuebersicht.json"
     },
     {
       "name": "ressourcen-mitteluebersicht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/ressourcen-mitteluebersicht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/ressourcen-mitteluebersicht.json"
     },
     {
       "name": "fortschrittsbericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/fortschrittsbericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/fortschrittsbericht.json"
     },
     {
       "name": "betreuungsueberwachung-log",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuungsueberwachung-log.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/betreuungsueberwachung-log.json"
     },
     {
       "name": "otfallkontakte",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/otfallkontakte.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/otfallkontakte.json"
     },
     {
       "name": "sprach-kommunikationsprofil",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/sprach-kommunikationsprofil.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/sprach-kommunikationsprofil.json"
     },
     {
       "name": "dokumentenarchiv-index",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/dokumentenarchiv-index.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/dokumentenarchiv-index.json"
     },
     {
       "name": "pflegebericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/pflegebericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/pflegebericht.json"
     },
     {
       "name": "schulden-finanzmanagement",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/schulden-finanzmanagement.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/schulden-finanzmanagement.json"
     },
     {
       "name": "technologie-equipment-inventar",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/technologie-equipment-inventar.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/technologie-equipment-inventar.json"
     },
     {
       "name": "feedback-beschwerdeformular",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/feedback-beschwerdeformular.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/feedback-beschwerdeformular.json"
     },
     {
       "name": "gespraechsnotiz",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/gespraechsnotiz.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/gespraechsnotiz.json"
     },
     {
       "name": "qualitaetsmanagement-audit",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/qualitaetsmanagement-audit.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/qualitaetsmanagement-audit.json"
     },
     {
       "name": "monatlicheTerminübersicht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/monatlicheTerminübersicht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/monatlicheTerminübersicht.json"
     },
     {
       "name": "rechtliche-vorgangsakte",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/rechtliche-vorgangsakte.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/rechtliche-vorgangsakte.json"
     },
     {
       "name": "kriseninterventionsplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/kriseninterventionsplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/kriseninterventionsplan.json"
     },
     {
       "name": "versicherungsuebersicht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/versicherungsuebersicht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/versicherungsuebersicht.json"
     },
     {
       "name": "supervisions-coachingbericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/supervisions-coachingbericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/supervisions-coachingbericht.json"
     },
     {
       "name": "betreuungsrichtlinien-dokument",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuungsrichtlinien-dokument.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/betreuungsrichtlinien-dokument.json"
     },
     {
       "name": "antrag-genehmigung-besonderer-massnahmen",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/antrag-genehmigung-besonderer-massnahmen.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/antrag-genehmigung-besonderer-massnahmen.json"
     },
     {
       "name": "betreuerbericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuerbericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/betreuerbericht.json"
     },
     {
       "name": "unterstuetzungsnetzwerk-uebersicht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/unterstuetzungsnetzwerk-uebersicht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/unterstuetzungsnetzwerk-uebersicht.json"
     },
     {
       "name": "jahresbericht-betreuungsgericht",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/jahresbericht-betreuungsgericht.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/jahresbericht-betreuungsgericht.json"
     },
     {
       "name": "barrierefreie-kommunikationsvereinbarung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/barrierefreie-kommunikationsvereinbarung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/barrierefreie-kommunikationsvereinbarung.json"
     },
     {
       "name": "aufgabenliste-prioritäten",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/aufgabenliste-prioritäten.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/aufgabenliste-prioritäten.json"
     },
     {
       "name": "angehoerigenbefragung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/angehoerigenbefragung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/angehoerigenbefragung.json"
     },
     {
       "name": "zielvereinbarungsprotokoll",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/zielvereinbarungsprotokoll.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/zielvereinbarungsprotokoll.json"
     },
     {
       "name": "betreuungsplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/betreuungsplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/betreuungsplan.json"
     },
     {
       "name": "terminplanung",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/terminplanung.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/terminplanung.json"
     },
     {
       "name": "familien-biografiedaten",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/familien-biografiedaten.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/familien-biografiedaten.json"
     },
     {
       "name": "selbstfuersorgeplan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/selbstfuersorgeplan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/selbstfuersorgeplan.json"
     },
     {
       "name": "kommunikationsnachweis",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/kommunikationsnachweis.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/kommunikationsnachweis.json"
     },
     {
       "name": "beschwerdemanagement-prozess",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/beschwerdemanagement-prozess.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/beschwerdemanagement-prozess.json"
     },
     {
       "name": "dokumentations-checkpoint",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/dokumentations-checkpoint.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/dokumentations-checkpoint.json"
     },
     {
       "name": "interventionsprotokoll-verhaltensauffaelligkeiten",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/interventionsprotokoll-verhaltensauffaelligkeiten.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/interventionsprotokoll-verhaltensauffaelligkeiten.json"
     },
     {
       "name": "statusReport",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/statusReport.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/statusReport.json"
     },
     {
       "name": "legalProceeding",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalProceeding.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/legalProceeding.json"
     },
     {
       "name": "supportProvision",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/supportProvision.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/supportProvision.json"
     },
     {
       "name": "reportMeta",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reportMeta.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/reportMeta.json"
     },
     {
       "name": "targetAgreement",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/targetAgreement.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/targetAgreement.json"
     },
     {
       "name": "personProfile",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/personProfile.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/personProfile.json"
     },
     {
       "name": "otherTasks",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/otherTasks.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/otherTasks.json"
     },
     {
       "name": "evaluationOutlook",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/evaluationOutlook.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/evaluationOutlook.json"
     },
     {
       "name": "attachments",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/attachments.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/attachments.json"
     },
     {
       "name": "evaluationReflection",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/evaluationReflection.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/evaluationReflection.json"
     },
     {
       "name": "reporttTammdaten",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reporttTammdaten.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/reporttTammdaten.json"
     },
     {
       "name": "lifeSituation",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/lifeSituation.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/lifeSituation.json"
     },
     {
       "name": "emergencyContact",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/emergencyContact.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/emergencyContact.json"
     },
     {
       "name": "stakeholder",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/stakeholder.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/stakeholder.json"
     },
     {
       "name": "followUp",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/followUp.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/followUp.json"
     },
     {
       "name": "communicationAgreement",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/communicationAgreement.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/communicationAgreement.json"
     },
     {
       "name": "crisisInterventionPlan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/crisisInterventionPlan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/crisisInterventionPlan.json"
     },
     {
       "name": "conversationSummary",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/conversationSummary.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/conversationSummary.json"
     },
     {
       "name": "actionTimelineEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/actionTimelineEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/actionTimelineEntry.json"
     },
     {
       "name": "annualCourtReport",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/annualCourtReport.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/annualCourtReport.json"
     },
     {
       "name": "powerOfAttorney",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/powerOfAttorney.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/powerOfAttorney.json"
     },
     {
       "name": "accessibilityAssessment",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/accessibilityAssessment.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/accessibilityAssessment.json"
     },
     {
       "name": "languageProfile",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/languageProfile.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/languageProfile.json"
     },
     {
       "name": "equipmentInventory",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/equipmentInventory.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/equipmentInventory.json"
     },
     {
       "name": "communicationPlanItem",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/communicationPlanItem.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/communicationPlanItem.json"
     },
     {
       "name": "referenceEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/referenceEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/referenceEntry.json"
     },
     {
       "name": "performanceRecord",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/performanceRecord.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/performanceRecord.json"
     },
     {
       "name": "task",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/task.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/task.json"
     },
     {
       "name": "riskAssessment",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/riskAssessment.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/riskAssessment.json"
     },
     {
       "name": "riskMitigationAction",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/riskMitigationAction.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/riskMitigationAction.json"
     },
     {
       "name": "conversationCentralPoints",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/conversationCentralPoints.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/conversationCentralPoints.json"
     },
     {
       "name": "legalOutcome",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalOutcome.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/legalOutcome.json"
     },
     {
       "name": "monitoringLogEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/monitoringLogEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/monitoringLogEntry.json"
     },
     {
       "name": "monthlyOverview",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/monthlyOverview.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/monthlyOverview.json"
     },
     {
       "name": "riskCategory",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/riskCategory.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/riskCategory.json"
     },
     {
       "name": "ethicalRiskAnalysis",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/ethicalRiskAnalysis.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/ethicalRiskAnalysis.json"
     },
     {
       "name": "ethicalCriterion",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/ethicalCriterion.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/ethicalCriterion.json"
     },
     {
       "name": "complianceChecklist",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/complianceChecklist.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/complianceChecklist.json"
     },
     {
       "name": "actionTimeline",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/actionTimeline.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/actionTimeline.json"
     },
     {
       "name": "healthCare",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/healthCare.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/healthCare.json"
     },
     {
       "name": "documentIndexEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/documentIndexEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/documentIndexEntry.json"
     },
     {
       "name": "surveyResponse",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/surveyResponse.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/surveyResponse.json"
     },
     {
       "name": "externalActivities",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/externalActivities.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/externalActivities.json"
     },
     {
       "name": "legalFoundation",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalFoundation.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/legalFoundation.json"
     },
     {
       "name": "familyBio",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/familyBio.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/familyBio.json"
     },
     {
       "name": "medicationPlan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/medicationPlan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/medicationPlan.json"
     },
     {
       "name": "shoppingPlan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/shoppingPlan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/shoppingPlan.json"
     },
     {
       "name": "trainingRecord",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/trainingRecord.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/trainingRecord.json"
     },
     {
       "name": "reportTaskAreas",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reportTaskAreas.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/reportTaskAreas.json"
     },
     {
       "name": "contactDesign",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/contactDesign.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/contactDesign.json"
     },
     {
       "name": "caseClosureReport",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/caseClosureReport.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/caseClosureReport.json"
     },
     {
       "name": "carePlanGoal",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/carePlanGoal.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/carePlanGoal.json"
     },
     {
       "name": "trainingPlan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/trainingPlan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/trainingPlan.json"
     },
     {
       "name": "courtCorrespondence",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/courtCorrespondence.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/courtCorrespondence.json"
     },
     {
       "name": "conversationLogEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/conversationLogEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/conversationLogEntry.json"
     },
     {
       "name": "complaint",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/complaint.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/complaint.json"
     },
     {
       "name": "auditRecord",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/auditRecord.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/auditRecord.json"
     },
     {
       "name": "reportPeriod",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/reportPeriod.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/reportPeriod.json"
     },
     {
       "name": "resourceRequest",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/resourceRequest.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/resourceRequest.json"
     },
     {
       "name": "personalSituation",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/personalSituation.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/personalSituation.json"
     },
     {
       "name": "residenceDetermination",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/residenceDetermination.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/residenceDetermination.json"
     },
     {
       "name": "consentDocument",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/consentDocument.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/consentDocument.json"
     },
     {
       "name": "supervisionRecord",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/supervisionRecord.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/supervisionRecord.json"
     },
     {
       "name": "privacyConsent",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/privacyConsent.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/privacyConsent.json"
     },
     {
       "name": "selfCarePlan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/selfCarePlan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/selfCarePlan.json"
     },
     {
       "name": "nursingReportEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/nursingReportEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/nursingReportEntry.json"
     },
     {
       "name": "serviceEvaluation",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/serviceEvaluation.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/serviceEvaluation.json"
     },
     {
       "name": "complaintProcess",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/complaintProcess.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/complaintProcess.json"
     },
     {
       "name": "specialMeasuresRequest",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/specialMeasuresRequest.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/specialMeasuresRequest.json"
     },
     {
       "name": "resourcesOverview",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/resourcesOverview.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/resourcesOverview.json"
     },
     {
       "name": "assetCare",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/assetCare.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/assetCare.json"
     },
     {
       "name": "letterHeader",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/letterHeader.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/letterHeader.json"
     },
     {
       "name": "progressReport",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/progressReport.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/progressReport.json"
     },
     {
       "name": "handoverProtocol",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/handoverProtocol.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/handoverProtocol.json"
     },
     {
       "name": "letterBody",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/letterBody.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/letterBody.json"
     },
     {
       "name": "libertyDeprivation",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/libertyDeprivation.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/libertyDeprivation.json"
     },
     {
       "name": "interdisciplinaryTeamProtocol",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/interdisciplinaryTeamProtocol.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/interdisciplinaryTeamProtocol.json"
     },
     {
       "name": "invoice",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/invoice.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/invoice.json"
     },
     {
       "name": "measureEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/measureEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/measureEntry.json"
     },
     {
       "name": "applicableNorm",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/applicableNorm.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/applicableNorm.json"
     },
     {
       "name": "networkPartner",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/networkPartner.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/networkPartner.json"
     },
     {
       "name": "interventionProtocolEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/interventionProtocolEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/interventionProtocolEntry.json"
     },
     {
       "name": "medication",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/medication.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/medication.json"
     },
     {
       "name": "legalBasis",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/legalBasis.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/legalBasis.json"
     },
     {
       "name": "carePlanAction",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/carePlanAction.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/carePlanAction.json"
     },
     {
       "name": "insurancePolicy",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/insurancePolicy.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/insurancePolicy.json"
     },
     {
       "name": "notificationLogEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/notificationLogEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/notificationLogEntry.json"
     },
     {
       "name": "measurePlan",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/measurePlan.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/measurePlan.json"
     },
     {
       "name": "budgetItem",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/budgetItem.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/budgetItem.json"
     },
     {
       "name": "policyDocument",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/policyDocument.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/policyDocument.json"
     },
     {
       "name": "dateRange",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/dateRange.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/dateRange.json"
     },
     {
       "name": "moodBehaviorEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/moodBehaviorEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/moodBehaviorEntry.json"
     },
     {
       "name": "party",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/party.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/party.json"
     },
     {
       "name": "timelineEvent",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/timelineEvent.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/timelineEvent.json"
     },
     {
       "name": "subsumption",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/subsumption.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/subsumption.json"
     },
     {
       "name": "calendarEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/calendarEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/calendarEntry.json"
     },
     {
       "name": "bezugnahmen",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/bezugnahmen.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/bezugnahmen.json"
     },
     {
       "name": "authorityRegulations",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/authorityRegulations.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/authorityRegulations.json"
     },
     {
       "name": "checkpointEntry",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/checkpointEntry.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/checkpointEntry.json"
     },
     {
       "name": "financialTransaction",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/financialTransaction.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/financialTransaction.json"
     },
     {
       "name": "factualCircumstances",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/factualCircumstances.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/factualCircumstances.json"
     },
     {
       "name": "documentationGuideline",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/documentationGuideline.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/documentationGuideline.json"
     },
     {
       "name": "conversationMeta",
-      "url": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/modules/conversationMeta.json"
+      "url": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/modules/conversationMeta.json"
     }
   ]
 }

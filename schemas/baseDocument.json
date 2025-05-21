@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/politpatrick/betreuer-gpt/main/schemas/baseDocument.json",
+  "$id": "https://raw.githubusercontent.com/patrickkunze/betreuer-gpt/main/schemas/baseDocument.json",
   "title": "Base Document Schema",
   "description": "Grundlegendes Schema für alle Betreuungsdokumente mit gemeinsamen Metadaten und Typ-Angabe.",
   "type": "object",
